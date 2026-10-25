@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!-- saved from url=(0189)https://codex-inline-visualization-854bb6fcffb895b9.web-sandbox.oaiusercontent.com/?app=skybridge&locale=en-US&deviceType=desktop&unsafeSkipTargetOriginCheck=true&backgroundMode=transparent -->
+<html lang="en-US" class="transparentSkybridgeBackground desktopSkybridge dark" data-theme="dark" style="color-scheme: dark; --safe-area-inset-top: 0px; --safe-area-inset-bottom: 0px; --safe-area-inset-left: 0px; --safe-area-inset-right: 0px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>@layer sandbox-defaults{html,body,#root{margin:0;padding:0}}</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beyond First Impressions | Wonder Artifact 3</title>
+<meta name="description" content="An interactive, multimodal Grade 8 ELA mentor feature for analyzing perspective, belonging, evidence, and responsible AI use in Wonder.">
+<style>
+:root{--ink:#202637;--muted:#596477;--paper:#fffdf8;--cream:#f4efe5;--plum:#573a69;--coral:#d96d57;--teal:#287d7a;--gold:#e7b84d;--line:#ddd6ca;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:#185e68;text-underline-offset:3px}button,select,textarea,input{font:inherit}button{cursor:pointer;border:0;border-radius:999px;padding:.7rem 1.05rem;background:var(--plum);color:#fff;font-weight:700}button:focus-visible,a:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:1rem}.skip:focus{left:1rem;z-index:9}
+header{background:var(--plum);color:#fff;padding:1.1rem max(1.2rem,calc((100vw - 1120px)/2)) 3.2rem;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;border:38px solid rgba(255,255,255,.1);right:-70px;top:-95px}
+.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.78rem;font-weight:800;color:#f7d9a0}
+h1{font-size:clamp(2.5rem,6vw,5.2rem);line-height:.98;max-width:800px;margin:.7rem 0 1rem;letter-spacing:-.045em}
+.lede{font-size:clamp(1.08rem,2vw,1.35rem);max-width:760px;color:#f7f0f8}
+.hero-row{display:grid;grid-template-columns:1.4fr .8fr;gap:2rem;align-items:center;max-width:1120px;margin:auto}
+.hero-art{width:100%;max-width:350px;justify-self:center}
+.pill{display:inline-block;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:.25rem .65rem;font-size:.82rem;margin:.25rem .3rem .25rem 0}
+nav{position:sticky;top:0;background:#fffdf8f2;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:5;padding:.6rem max(1rem,calc((100vw - 1120px)/2));display:flex;gap:.45rem;overflow-x:auto}
+nav a{white-space:nowrap;text-decoration:none;font-size:.9rem;font-weight:750;color:var(--ink);padding:.45rem .75rem;border-radius:999px}nav a:hover{background:var(--cream)}
+main{max-width:1120px;margin:auto;padding:1rem 1.25rem 4rem}
+section{padding:2.6rem 0;border-bottom:1px solid var(--line);scroll-margin-top:80px}
+h2{font-size:clamp(1.8rem,3.4vw,2.8rem);line-height:1.1;letter-spacing:-.03em;margin:.3rem 0 .9rem}
+h3{line-height:1.2;margin:.25rem 0 .6rem}
+.kicker{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:850;color:var(--teal)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.2rem;box-shadow:0 8px 24px #322a1708}
+.card.soft{background:var(--cream)}.card.plum{background:#f2eaf5;border-color:#ded0e7}.card.teal{background:#e8f3f1;border-color:#c9e2dd}
+.big{font-size:2rem;line-height:1}
+.tag{display:inline-block;font-size:.76rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border-radius:6px;padding:.18rem .45rem;background:#e8f3f1;color:#195c59}
+.quote{font-family:Georgia,serif;font-size:1.35rem;line-height:1.45;border-left:5px solid var(--coral);padding:.4rem 0 .4rem 1rem;margin:1rem 0}
+.note{font-size:.9rem;color:var(--muted)}
+button.secondary{background:#fff;color:var(--plum);border:1px solid #c9b8d3}
+button.tealbtn{background:var(--teal)}button.goldbtn{background:#785616}
+.controls{display:flex;flex-wrap:wrap;gap:.55rem;margin:.8rem 0}
+.perspectives{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:1rem}
+.perspective{border:2px solid transparent;text-align:left;background:#fff;color:var(--ink);border-radius:18px;padding:1rem;box-shadow:0 0 0 1px var(--line)}
+.perspective[aria-pressed="true"]{border-color:var(--teal);background:#e8f3f1}
+.perspective .emoji{font-size:2rem;display:block;margin-bottom:.4rem}
+#perspective-output{min-height:160px}
+.choice-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+fieldset{border:0;padding:0;margin:1rem 0}legend{font-weight:800;margin-bottom:.5rem}
+label.choice{display:flex;gap:.6rem;align-items:flex-start;padding:.75rem;border:1px solid var(--line);border-radius:12px;margin:.45rem 0;background:#fff}
+input[type=radio],input[type=checkbox]{margin-top:.35rem;accent-color:var(--plum)}
+.feedback{margin-top:.75rem;padding:.8rem 1rem;border-radius:12px;background:#f4efe5;min-height:3rem}
+textarea,select,input[type=text]{width:100%;border:1px solid #b9b1a6;border-radius:12px;padding:.75rem;background:#fff;color:var(--ink)}
+textarea{min-height:100px;resize:vertical}
+.step{display:flex;gap:.8rem;align-items:flex-start;margin:1rem 0}
+.stepno{display:grid;place-items:center;min-width:2.2rem;height:2.2rem;border-radius:50%;background:var(--coral);color:#fff;font-weight:900}
+.checklist label{display:flex;gap:.6rem;padding:.5rem 0}
+.progress{height:9px;background:#e5ded2;border-radius:99px;overflow:hidden}.progress span{display:block;width:0;height:100%;background:var(--teal);transition:width .2s}
+svg{max-width:100%;height:auto}
+footer{background:#202637;color:#fff;padding:2rem 1.25rem}footer .inner{max-width:1120px;margin:auto}
+@media(max-width:760px){.hero-row,.grid,.grid.two,.choice-row{grid-template-columns:1fr}.hero-art{max-width:220px}.perspectives{grid-template-columns:1fr}.hero-row{gap:1rem}header{padding-bottom:2rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<style>html, body, #root {
+      margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;
+      
+    }
+html,body,#root{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}html,body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,Arial,sans-serif!important}button,input,textarea,select{font-family:inherit}html{background-color:transparent}html.chatgptOled.dark,html.mobileSkybridge.dark{background-color:#000}@supports (font: -apple-system-body){html.mobileSkybridge{font:-apple-system-body}}html.desktopSkybridge.dark{background-color:#1e1e1e}html.transparentSkybridgeBackground,html.transparentSkybridgeBackground.dark{background-color:transparent}html.androidSkybridge,html.androidSkybridge body,html.androidSkybridge *{-webkit-tap-highlight-color:rgba(255,255,255,0)}html.androidSkybridge *::selection,html.androidSkybridge *::-moz-selection{background:#fff0;color:inherit}</style></head>
+<body data-new-gr-c-s-check-loaded="14.1341.0" data-gr-ext-installed="">
+<a class="skip" href="https://codex-inline-visualization-854bb6fcffb895b9.web-sandbox.oaiusercontent.com/?app=skybridge&amp;locale=en-US&amp;deviceType=desktop&amp;unsafeSkipTargetOriginCheck=true&amp;backgroundMode=transparent#main">Skip to content</a>
+<header>
+  <div class="hero-row">
+    <div>
+      <div class="eyebrow">Grade 8 ELA · Interactive mentor feature</div>
+      <h1>Beyond First Impressions</h1>
+      <p class="lede">What changes when we pause, check the evidence, and try to see a person from more than one perspective?</p>
+      <p>Explore identity, belonging, and representation through <em>Wonder</em> by R. J. Palacio. Then investigate how an AI-generated interpretation can sound convincing while leaving out important complexity.</p>
+      <span class="pill">Read closely</span><span class="pill">Listen and look</span><span class="pill">Question AI</span><span class="pill">Build a claim</span>
+      <div class="controls"><button onclick="speakSection('intro')">▶ Listen to introduction</button><button class="secondary" onclick="stopSpeech()">■ Stop audio</button></div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 360 310" role="img" aria-labelledby="heroTitle heroDesc">
+      <title id="heroTitle">Three overlapping windows</title><desc id="heroDesc">Three overlapping colorful windows represent different perspectives on the same person.</desc>
+      <rect x="28" y="42" width="170" height="205" rx="28" fill="#e7b84d" transform="rotate(-8 113 145)"></rect>
+      <rect x="101" y="28" width="170" height="205" rx="28" fill="#d96d57" transform="rotate(8 186 130)"></rect>
+      <rect x="82" y="92" width="170" height="190" rx="28" fill="#287d7a" transform="rotate(-2 167 187)"></rect>
+      <circle cx="165" cy="145" r="36" fill="#fffdf8"></circle><path d="M103 240 Q112 177 165 177 Q218 177 228 240" fill="#fffdf8"></path>
+      <circle cx="165" cy="145" r="51" fill="none" stroke="#573a69" stroke-width="3" stroke-dasharray="5 7"></circle>
+      <path d="M22 276 C80 247 100 299 157 276 S249 252 330 282" stroke="#fffdf8" stroke-width="4" fill="none" opacity=".8"></path>
+    </svg>
+  </div>
+</header>
+<nav aria-label="Main navigation">
+<a href="https://codex-inline-visualization-854bb6fcffb895b9.web-sandbox.oaiusercontent.com/?app=skybridge&amp;locale=en-US&amp;deviceType=desktop&amp;unsafeSkipTargetOriginCheck=true&amp;backgroundMode=transparent#big-idea">Big idea</a><a href="https://codex-inline-visualization-854bb6fcffb895b9.web-sandbox.oaiusercontent.com/?app=skybridge&amp;locale=en-US&amp;deviceType=desktop&amp;unsafeSkipTargetOriginCheck=true&amp;backgroundMode=transparent#perspectives">Switch perspectives</a><a href="https://codex-inline-visualization-854bb6fcffb895b9.web-sandbox.oaiusercontent.com/?app=skybridge&amp;locale=en-US&amp;deviceType=desktop&amp;unsafeSkipTargetOriginCheck=true&amp;backgroundMode=transparent#ai-lab">AI lab</a><a href="https://codex-inline-visualization-854bb6fcffb895b9.web-sandbox.oaiusercontent.com/?app=skybridge&amp;locale=en-US&amp;deviceType=desktop&amp;unsafeSkipTargetOriginCheck=true&amp;backgroundMode=transparent#evidence">Evidence lab</a><a href="https://codex-inline-visualization-854bb6fcffb895b9.web-sandbox.oaiusercontent.com/?app=skybridge&amp;locale=en-US&amp;deviceType=desktop&amp;unsafeSkipTargetOriginCheck=true&amp;backgroundMode=transparent#build">Build your feature</a>
+</nav>
+<main id="main">
+<section id="big-idea">
+  <div class="kicker">01 · Start here</div><h2>One person. More than one story.</h2>
+  <div class="grid two">
+    <div class="card soft">
+      <div class="big">👀</div><h3>First impressions are fast.</h3>
+      A person may notice appearance, a single action, or what other people say. That information can shape a first impression, but it cannot tell a whole life story.
+    </div>
+    <div class="card teal">
+      <div class="big">🔎</div><h3>Interpretations need evidence.</h3>
+      Readers can slow down, examine what the text actually shows, and revise a first idea when new details or another perspective changes the picture.
+    </div>
+  </div>
+  <p class="quote">A strong interpretation does not just say what a character is like. It explains how the text leads us to that interpretation—and what we may still be missing.</p>
+  <div class="card">
+    <h3>Essential question</h3><p><strong>How do identity, assumptions, and perspective shape a character’s experience of belonging?</strong></p>
+    <p class="note">As you explore, keep the novel as your primary source. This feature does not replace reading the complex text; it gives you a structure for thinking about it.</p>
+  </div>
+</section>
+
+<section id="perspectives">
+  <div class="kicker">02 · Interactive perspective switch</div><h2>Switch the lens</h2>
+  <p>The same event can be interpreted differently depending on who is looking, what they know, and what they may not understand yet. Select a lens, then compare what each lens notices.</p>
+  <div class="perspectives" role="group" aria-label="Choose a perspective">
+    <button class="perspective" aria-pressed="true" data-lens="student" onclick="setLens('student')"><span class="emoji">🧑‍🎓</span><strong>A student’s lens</strong><br><span class="note">Belonging and peer reactions</span></button>
+    <button class="perspective" aria-pressed="false" data-lens="family" onclick="setLens('family')"><span class="emoji">🏡</span><strong>A family lens</strong><br><span class="note">Care, worry, and support</span></button>
+    <button class="perspective" aria-pressed="false" data-lens="observer" onclick="setLens('observer')"><span class="emoji">🪟</span><strong>An outside observer</strong><br><span class="note">What is visible—and unknown</span></button>
+  </div>
+  <div class="card" id="perspective-output" aria-live="polite" style="margin-top:1rem">
+    <span class="tag">Student’s lens</span><h3>What might this person notice?</h3>
+    A student may notice who includes someone, who avoids eye contact, or how classmates respond. But a single moment cannot prove what everyone thinks or why they acted that way.
+    <p><strong>Check the text:</strong> Which action, dialogue, or reaction in <em>Wonder</em> supports your interpretation? What else could explain the moment?</p>
+  </div>
+  <div class="card soft" style="margin-top:1rem">
+    <h3>Try it: what does this lens make easier to see?</h3>
+    <label for="lens-reflection">Write one thing this perspective helps you notice and one thing it cannot tell you.</label>
+    <textarea id="lens-reflection" placeholder="This lens helps me notice… It cannot tell me…"></textarea>
+    <button class="secondary" onclick="speakText(document.getElementById('lens-reflection').value || 'Write one thing this perspective helps you notice and one thing it cannot tell you.')">▶ Listen to my reflection</button>
+  </div>
+</section>
+
+<section id="ai-lab">
+  <div class="kicker">03 · Responsible AI investigation</div><h2>Can a polished answer still be incomplete?</h2>
+  <p>The following is a <strong>fictional AI-generated sample</strong> created for this learning activity. It is not a quotation from the novel and should not be treated as evidence.</p>
+  <div class="card plum">
+    <div class="grid two" style="align-items:center">
+      <div><span class="tag">AI-generated sample · inspect, don't trust automatically</span>
+        <p class="quote" style="margin-bottom:.4rem">“A person who looks different will probably feel isolated, and kind classmates can solve the problem by including them.”</p>
+        <p class="note">This sample sounds clear, but it makes broad assumptions and simplifies belonging.</p>
+        <div class="controls"><button onclick="speakText('AI-generated sample. A person who looks different will probably feel isolated, and kind classmates can solve the problem by including them.')">▶ Listen to sample</button></div>
+      </div>
+      <svg viewBox="0 0 240 180" role="img" aria-label="Magnifying glass over a speech bubble">
+        <rect x="24" y="22" width="150" height="92" rx="18" fill="#fff" stroke="#573a69" stroke-width="3"></rect>
+        <path d="M66 113 L56 134 L91 114" fill="#fff" stroke="#573a69" stroke-width="3" stroke-linejoin="round"></path>
+        <path d="M52 52 H145 M52 72 H128 M52 92 H112" stroke="#d96d57" stroke-width="6" stroke-linecap="round"></path>
+        <circle cx="155" cy="110" r="38" fill="#e7b84d" fill-opacity=".6" stroke="#287d7a" stroke-width="7"></circle>
+        <path d="M183 138 L216 168" stroke="#287d7a" stroke-width="12" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="choice-row" style="margin-top:1rem">
+    <div class="card">
+      <h3>Make a judgment</h3>
+      <p>Choose the best first response to the AI sample.</p>
+      <fieldset>
+        <legend>What would you do with this claim?</legend>
+        <label class="choice"><input type="radio" name="ai-choice" value="keep"> <span><strong>Keep</strong> it as written.</span></label>
+        <label class="choice"><input type="radio" name="ai-choice" value="revise"> <span><strong>Revise</strong> it to be more precise and less general.</span></label>
+        <label class="choice"><input type="radio" name="ai-choice" value="reject"> <span><strong>Reject</strong> it because its assumptions are not supported yet.</span></label>
+      </fieldset>
+      <button onclick="checkAI()">Check my thinking</button><div class="feedback" id="ai-feedback" aria-live="polite">Your explanation matters more than selecting one label. Use the feedback to sharpen your reasoning.</div>
+    </div>
+    <div class="card soft">
+      <h3>Find the problem</h3>
+      <div class="checklist">
+        <label><input type="checkbox" class="ai-issue" value="general"> It treats people who look different as if they all feel the same way.</label>
+        <label><input type="checkbox" class="ai-issue" value="simple"> It makes belonging sound like a problem that kindness alone can instantly solve.</label>
+        <label><input type="checkbox" class="ai-issue" value="evidence"> It provides no evidence from <em>Wonder</em>.</label>
+        <label><input type="checkbox" class="ai-issue" value="complete"> It represents every character’s experience completely.</label>
+      </div>
+      <button class="secondary" onclick="checkIssues()">Check selected observations</button><div class="feedback" id="issue-feedback" aria-live="polite">Select the problems you notice.</div>
+    </div>
+  </div>
+  <div class="card teal" style="margin-top:1rem">
+    <h3>Revise the AI sample</h3>
+    <p>Write a more careful version. Avoid claiming that one character’s experience represents everyone. Leave room for evidence and complexity.</p>
+    <textarea id="ai-revision" placeholder="A more careful interpretation would be…"></textarea>
+    <div class="controls"><button onclick="speakText(document.getElementById('ai-revision').value || 'Write your revised interpretation.')">▶ Listen to revision</button><button class="secondary" onclick="copyText('ai-revision')">Copy revision</button></div>
+  </div>
+</section>
+
+<section id="evidence">
+  <div class="kicker">04 · Close-reading evidence lab</div><h2>Move from opinion to evidence</h2>
+  <p>Return to the complex text, <em>Wonder</em>. Choose a specific moment and gather evidence before deciding what it means. Page numbers vary by edition, so use your own copy and record the chapter or page.</p>
+  <div class="grid two">
+    <div class="card">
+      <h3>Evidence finder</h3>
+      <div class="step"><span class="stepno">1</span><div><strong>Notice</strong><br>Find an action, a line of dialogue, a reaction, or a narrator’s detail connected to identity or belonging.</div></div>
+      <div class="step"><span class="stepno">2</span><div><strong>Record</strong><br>Write a short quotation or accurate paraphrase and note the page/chapter.</div></div>
+      <div class="step"><span class="stepno">3</span><div><strong>Explain</strong><br>Explain how the detail supports your interpretation. Do not let the quotation speak for itself.</div></div>
+      <div class="step"><span class="stepno">4</span><div><strong>Complicate</strong><br>Ask what another character might notice or what the evidence does not prove.</div></div>
+    </div>
+    <div class="card soft">
+      <h3>Build an evidence card</h3>
+      <label for="claim">My working claim</label><textarea id="claim" placeholder="The novel suggests that belonging…"></textarea>
+      <label for="evidence-text">Evidence from my copy (quote or paraphrase)</label><textarea id="evidence-text" placeholder="The moment I found…"></textarea>
+      <label for="location">Page/chapter and speaker or narrator</label><input id="location" type="text" placeholder="Page/chapter, speaker/narrator">
+      <label for="reasoning">My reasoning: how does this evidence support the claim?</label><textarea id="reasoning" placeholder="This detail supports my claim because…"></textarea>
+      <label for="limit">What this evidence does not prove / another possible perspective</label><textarea id="limit" placeholder="This does not necessarily mean… Another perspective might be…"></textarea>
+      <div class="controls"><button onclick="copyEvidence()">Copy evidence card</button><button class="secondary" onclick="speakText(document.getElementById('reasoning').value || 'Add your reasoning about the evidence.')">▶ Listen to reasoning</button></div>
+      <div class="feedback" id="evidence-feedback" aria-live="polite">Your evidence card will be assembled for copying when you click the button.</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:1rem">
+    <h3>Connect the novel to another source</h3>
+    <p>For the final feature, add at least one informational, first-person, literary, visual, or film source. Ask: What background knowledge does this source add? Whose voice is centered? How is its perspective similar to or different from <em>Wonder</em>?</p>
+    <label for="source-note">Source title/type and what it adds</label><textarea id="source-note" placeholder="My additional source is… It adds background knowledge about… Its perspective differs because…"></textarea>
+  </div>
+</section>
+
+<section id="build">
+  <div class="kicker">05 · Create for an audience</div><h2>Build your “See It From My Perspective” feature</h2>
+  <p>Your final feature should help a real reader understand how identity, assumptions, and perspective shape belonging. Use technology to make the analysis clearer and more accessible—not just to decorate the page.</p>
+  <div class="grid two">
+    <div class="card">
+      <h3>Feature blueprint</h3>
+      <div class="checklist" id="feature-checklist">
+        <label><input type="checkbox" class="feature-check"> A clear, arguable claim about identity, assumptions, perspective, or belonging.</label>
+        <label><input type="checkbox" class="feature-check"> Relevant evidence from <em>Wonder</em>, with page/chapter and explanation.</label>
+        <label><input type="checkbox" class="feature-check"> Evidence or information from at least one additional source.</label>
+        <label><input type="checkbox" class="feature-check"> Consideration of another character’s or source’s perspective.</label>
+        <label><input type="checkbox" class="feature-check"> A purposeful visual, audio, or interactive element that adds meaning.</label>
+        <label><input type="checkbox" class="feature-check"> Revision for clarity, accuracy, audience, and respectful representation.</label>
+        <label><input type="checkbox" class="feature-check"> A reflection on what I kept, revised, or rejected from AI—and why.</label>
+      </div>
+      <div class="progress" aria-label="Feature checklist completion"><span id="progressbar"></span></div>
+      <p class="note" id="progress-text">0 of 7 criteria checked</p>
+    </div>
+    <div class="card plum">
+      <h3>Make the modes work together</h3>
+      <div class="step"><span class="stepno">👁</span><div><strong>Visual</strong><br>Use an image, diagram, layout, or highlighted evidence to focus attention on a meaningful contrast.</div></div>
+      <div class="step"><span class="stepno">👂</span><div><strong>Audio</strong><br>Use a brief narration or accessible audio version to emphasize tone or help readers access the idea.</div></div>
+      <div class="step"><span class="stepno">✍</span><div><strong>Written language</strong><br>Use a claim, evidence, and reasoning to explain the interpretation precisely.</div></div>
+      <div class="step"><span class="stepno">↔</span><div><strong>Interaction</strong><br>Let readers compare perspectives or reveal a source note that deepens the interpretation.</div></div>
+      <p><strong>Design test:</strong> If removing a mode changes nothing about the reader’s understanding, reconsider its purpose.</p>
+    </div>
+  </div>
+  <div class="card soft" style="margin-top:1rem">
+    <h3>Draft your audience-facing claim</h3>
+    <label for="final-claim">Claim</label><textarea id="final-claim" placeholder="In Wonder, Palacio suggests that…"></textarea>
+    <label for="audience">Who is your intended audience?</label><input id="audience" type="text" placeholder="Classmates, school community, readers of a digital magazine…">
+    <label for="mode-plan">How will the visual, audio, and interaction strengthen the argument?</label><textarea id="mode-plan" placeholder="The visual will… The audio will… The interaction will…"></textarea>
+    <button onclick="copyFinalPlan()">Copy my feature plan</button>
+    <div class="feedback" id="final-feedback" aria-live="polite">Draft your plan, then copy it into your working document.</div>
+  </div>
+</section>
+
+
+</main>
+<footer><div class="inner"><p><strong>Beyond First Impressions</strong> · Artifact 3 for “Identity, Belonging, and Perspective: Seeing Beyond Assumptions.”</p><p class="note" style="color:#d9d5df">Learning note: This is a teacher-created AI-generated learning artifact. The AI sample is not a quotation from <em>Wonder</em>. Students should verify all literary claims using their own copy and cite additional sources in their final work.</p><button onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button></div></footer>
+<script>
+const lenses={
+ student:{label:"Student’s lens",title:"What might this person notice?",text:"A student may notice who includes someone, who avoids eye contact, or how classmates respond. But a single moment cannot prove what everyone thinks or why they acted that way.",check:"Which action, dialogue, or reaction in Wonder supports your interpretation? What else could explain the moment?"},
+ family:{label:"Family lens",title:"What might care make visible?",text:"A family member may notice a person’s needs, strengths, worries, routines, and growth over time. That close knowledge can add context, but family members also have limited viewpoints and may not see every school or peer interaction.",check:"Which details in the novel support this lens? What might this person know that a classmate does not—and what might they not know?"},
+ observer:{label:"Outside observer’s lens",title:"What can an observer actually know?",text:"An observer may notice visible behavior and the setting, but cannot automatically know a person’s feelings, motives, history, or identity from appearance alone. Observation is a starting point, not a complete explanation.",check:"Separate what the text shows from what you infer. Which part is evidence, and which part is an assumption?"}
+};
+function setLens(key){const d=lenses[key];document.querySelectorAll('.perspective').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lens===key?'true':'false'));document.getElementById('perspective-output').innerHTML='<span class="tag">'+d.label+'</span><h3>'+d.title+'</h3><p>'+d.text+'</p><p><strong>Check the text:</strong> '+d.check+'</p>'; }
+function speakText(t){if(!t||!t.trim())return;if(!('speechSynthesis'in window)){alert('Audio playback is not supported in this browser.');return}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.rate=.92;speechSynthesis.speak(u)}
+function speakSection(id){let el=document.getElementById(id)||document.querySelector('header');speakText(el.innerText)}
+function stopSpeech(){if('speechSynthesis'in window)speechSynthesis.cancel()}
+function checkAI(){let v=document.querySelector('input[name="ai-choice"]:checked');let out=document.getElementById('ai-feedback');if(!v){out.textContent='Choose Keep, Revise, or Reject first.';return}if(v.value==='keep'){out.textContent='Look again: this statement generalizes about people and assumes inclusion alone solves belonging. A strong reader asks for evidence and nuance.'}else if(v.value==='revise'){out.textContent='Strong choice if your revision removes the generalization, recognizes that experiences differ, and grounds the interpretation in specific evidence from the novel.'}else{out.textContent='A defensible choice: the statement is too broad to accept as written. You could reject it or revise it—but explain your decision with evidence from the novel.'}}
+function checkIssues(){let vals=[...document.querySelectorAll('.ai-issue:checked')].map(x=>x.value);let out=document.getElementById('issue-feedback');let good=['general','simple','evidence'];let wrong=vals.includes('complete');if(!vals.length){out.textContent='Select at least one observation first.';return}let n=vals.filter(v=>good.includes(v)).length;out.textContent=(wrong?'The “represents every character completely” option is not a problem in the sample; the sample does not do this. ':'')+n+' of the key problems identified. Look for overgeneralizing, oversimplifying belonging, and missing evidence.'}
+function copyText(id){let t=document.getElementById(id).value;if(!t.trim()){alert('Write something first, then copy it.');return}navigator.clipboard?.writeText(t).then(()=>alert('Copied. Paste it into your working document.')).catch(()=>{document.getElementById(id).select();alert('Text selected. Press Ctrl+C to copy it.')})}
+function copyEvidence(){let fields=[['Claim', 'claim'],['Evidence', 'evidence-text'],['Location / speaker', 'location'],['Reasoning','reasoning'],['Limit / another perspective','limit']];let s=fields.map(([label,id])=>label+': '+document.getElementById(id).value.trim()).join('\n\n');if(!document.getElementById('claim').value.trim()||!document.getElementById('evidence-text').value.trim()){document.getElementById('evidence-feedback').textContent='Add at least a working claim and evidence before copying.';return}copyString(s,'evidence-feedback')}
+function copyFinalPlan(){let s='Claim: '+document.getElementById('final-claim').value+'\nAudience: '+document.getElementById('audience').value+'\nMultimodal plan: '+document.getElementById('mode-plan').value;if(!document.getElementById('final-claim').value.trim()){document.getElementById('final-feedback').textContent='Write your claim first.';return}copyString(s,'final-feedback')}
+function copyString(s,target){let el=document.getElementById(target);if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(()=>el.textContent='Copied! Paste this into your working document.').catch(()=>{window.prompt('Copy your text below:',s)})}else{window.prompt('Copy your text below:',s)}}
+function updateProgress(){let checks=[...document.querySelectorAll('.feature-check')];let n=checks.filter(c=>c.checked).length;document.getElementById('progressbar').style.width=(n/checks.length*100)+'%';document.getElementById('progress-text').textContent=n+' of '+checks.length+' criteria checked'}
+document.querySelectorAll('.feature-check').forEach(c=>c.addEventListener('change',updateProgress));
+</script>
+
+<script>globalThis.__codexVisualizationInitialGlobals={"statePersistence":"none","stateModelContext":"none","visualizationStyleVariables":{"--accent":"rgb(19, 52, 99)","--accent-foreground":"rgb(44, 103, 197)","--background":"rgb(0, 0, 0)","--border":"rgba(255, 255, 255, 0.15)","--border-strong":"rgba(255, 255, 255, 0.2)","--card":"color-mix(in oklab, rgb(237, 237, 237) 5%, transparent)","--card-foreground":"rgb(237, 237, 237)","--corner-shape":"round","--control-spacing":"12px","--cursor-interaction":"pointer","--destructive":"rgb(255, 133, 73)","--font-mono":"ui-monospace, SFMono-Regular, \"SF Mono\", menlo, consolas, \"Liberation Mono\", monospace","--font-sans":"-apple-system-body, ui-sans-serif, -apple-system, system-ui, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"","--font-size-base":"16px","--font-weight-normal":"400","--foreground":"rgb(237, 237, 237)","--input":"rgba(255, 255, 255, 0.2)","--muted":"color-mix(in srgb, rgb(237, 237, 237) 10%, transparent)","--muted-foreground":"rgb(175, 175, 175)","--popover":"rgb(48, 48, 48)","--popover-foreground":"rgb(237, 237, 237)","--primary":"rgb(44, 103, 197)","--primary-foreground":"rgb(13, 13, 13)","--radius":"8px","--radius-2xl":"16px","--radius-lg":"8px","--radius-md":"6px","--radius-sm":"4px","--ring":"rgb(58, 131, 247)","--secondary":"rgb(48, 48, 48)","--secondary-foreground":"rgb(237, 237, 237)","--blue":"rgb(58, 131, 247)","--orange":"rgb(251, 106, 34)","--green":"rgb(64, 201, 119)","--red":"rgb(255, 103, 100)","--purple":"rgb(173, 123, 249)","--yellow":"rgb(255, 210, 64)","--visualize-paint-gutter":"0px","--viz-series-1":"rgb(44, 103, 197)","--viz-series-2":"#f6d459","--viz-series-3":"#f28ec0","--viz-series-4":"#54ccc2","--viz-series-5":"#71d689","--viz-series-6":"#f79951"},"visualizationTheme":"dark"};</script>
+<style id="codex-visualization-host-theme">:root {}</style>
+<script>
+(() => {
+  // Host colors are defaults; later authored styles can give the same names
+  // their own meaning (for example, --muted as a chart's label color).
+  const hostStyles = document.getElementById("codex-visualization-host-theme");
+  const hostStyle = hostStyles.sheet.cssRules[0].style;
+  // Typography, geometry and interaction cursors still follow the host.
+  const styleForProperty = (property) =>
+    /^--(?:font-|radius|corner-shape$|control-spacing$|cursor-interaction$|icon-size$|visualize-paint-gutter$)/.test(property)
+      ? document.documentElement.style
+      : hostStyle;
+  const initialGlobals =
+    globalThis.__codexVisualizationInitialGlobals ?? globalThis.openai;
+  delete globalThis.__codexVisualizationInitialGlobals;
+  if (initialGlobals?.statePersistence != null) {
+    globalThis.openai ??= {};
+    globalThis.openai.statePersistence = initialGlobals.statePersistence;
+    globalThis.openai.stateModelContext = initialGlobals.stateModelContext ?? "none";
+  }
+  if (!false) {
+    return;
+  }
+  let appliedProperties = [];
+  const applyHostStyleVariables = (styleVariables) => {
+    if (styleVariables == null || typeof styleVariables !== "object") {
+      return;
+    }
+    for (const property of appliedProperties) {
+      styleForProperty(property).removeProperty(property);
+    }
+    appliedProperties = [];
+    for (const [property, value] of Object.entries(styleVariables)) {
+      if (property.startsWith("--") && typeof value === "string") {
+        styleForProperty(property).setProperty(property, value);
+        appliedProperties.push(property);
+      }
+    }
+  };
+
+  const syncHostStyles = (globals) => {
+    applyHostStyleVariables(globals?.visualizationStyleVariables);
+    const sandboxDocument = globalThis.frameElement?.ownerDocument;
+    if (sandboxDocument != null && globals?.visualizationTheme != null) {
+      let colorSchemeMeta = sandboxDocument.querySelector(
+        'meta[name="color-scheme"]',
+      );
+      if (colorSchemeMeta == null) {
+        colorSchemeMeta = sandboxDocument.createElement("meta");
+        colorSchemeMeta.name = "color-scheme";
+        sandboxDocument.head.appendChild(colorSchemeMeta);
+      }
+      colorSchemeMeta.content = globals.visualizationTheme;
+      sandboxDocument.documentElement.style.colorScheme =
+        globals.visualizationTheme;
+      // Paint the host surface behind transparent saved visualization documents.
+      sandboxDocument.documentElement.style.backgroundColor =
+        hostStyle.getPropertyValue("--background");
+    }
+  };
+
+  syncHostStyles(initialGlobals);
+  globalThis.addEventListener("openai:set_globals", (event) => {
+    syncHostStyles(event.detail?.globals);
+  });
+})();
+</script>
+<script>
+(() => {
+  const reportEnvironmentError = (value) => {
+    const error = value instanceof Error ? value : new Error(String(value));
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_error__",
+        {
+          message: error.message,
+          name: error.name,
+          stack: error.stack,
+        },
+      )
+      .catch(() => {});
+  };
+
+  globalThis.addEventListener("error", (event) => {
+    if (event.target?.localName === "script") {
+      // A script's own onerror may render a fallback or load an alternative.
+      // Let that handler run; failures it throws still reach the global error path.
+      const handlesError = typeof event.target.onerror === "function";
+      globalThis.queueMicrotask(() => {
+        if (!handlesError && !event.defaultPrevented) {
+          reportEnvironmentError("Visualization script could not be loaded");
+        }
+      });
+    } else if (event.target === globalThis) {
+      reportEnvironmentError(event.error ?? event.message);
+    }
+  }, true);
+  globalThis.addEventListener("unhandledrejection", (event) => {
+    reportEnvironmentError(event.reason);
+  });
+})();
+</script>
+<script id="codex-visualization-variants">
+(() => {
+  let previousSnapshot = "[]";
+  let roots = [];
+  const report = () => {
+    roots = Array.from(
+      document.querySelectorAll(".viz-carousel[data-active-variant]"),
+    ).slice(0, 32);
+    const selectedVariants = roots.flatMap((root, carousel) => {
+      const variant = root.dataset.activeVariant;
+      const label = root.getAttribute("aria-label")?.slice(0, 256);
+      return variant ? [{
+        carousel,
+        ...(label == null ? {} : { label }),
+        variant: variant.slice(0, 256),
+      }] : [];
+    });
+    const snapshot = JSON.stringify(selectedVariants);
+    if (snapshot !== previousSnapshot) {
+      previousSnapshot = snapshot;
+      void globalThis.openai.callTool("__codex_visualization_annotations__", {
+        type: "variants",
+        selectedVariants,
+      }).catch(() => {});
+    }
+  };
+  const observer = new MutationObserver((records) => {
+    if (records.some((record) => record.type === "attributes") || roots.some((root) => !root.isConnected)) {
+      report();
+    }
+  });
+  observer.observe(document, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["data-active-variant"],
+  });
+  report();
+  globalThis.addEventListener("pagehide", () => observer.disconnect(), { once: true });
+})();
+</script>
+<script>
+(() => {
+  let isHovering = false;
+  let isTouch = false;
+  const reportHover = (nextIsHovering, nextIsTouch = false) => {
+    if (nextIsHovering === isHovering && nextIsTouch === isTouch) {
+      return;
+    }
+    isHovering = nextIsHovering;
+    isTouch = nextIsTouch;
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_hover__",
+        isTouch ? { isHovering, pointerType: "touch" } : { isHovering },
+      )
+      .catch(() => {});
+  };
+
+  globalThis.addEventListener(
+    "pointerover",
+    (event) =>
+      reportHover(event.pointerType !== "touch", event.pointerType === "touch"),
+    { capture: true },
+  );
+  globalThis.addEventListener(
+    "pointerout",
+    (event) => {
+      if (event.pointerType !== "touch" && event.relatedTarget == null) {
+        reportHover(false);
+      }
+    },
+    { capture: true },
+  );
+})();
+</script>
+<script>
+(() => {
+  const report = (method) => {
+    void globalThis.openai.callTool("__codex_inline_visualization_input__", { method }).catch(() => {});
+  };
+  globalThis.addEventListener("pointerdown", () => report("pointer"), { capture: true });
+  globalThis.addEventListener("keydown", (event) => {
+    if (!event.isComposing && event.key !== "Shift" && !event.altKey && !event.ctrlKey && !event.metaKey) {
+      report(["Tab","ArrowLeft","ArrowRight","ArrowUp","ArrowDown"].includes(event.key) ? "keyboard-navigation" : "keyboard");
+    }
+  }, { capture: true });
+})();
+</script>
+<script>
+(() => {
+  const bubbledClicks = new WeakSet();
+  const interactiveSelector = [
+    "button", "input", "select", "textarea", "label", "summary", "a[href]",
+    "audio[controls]", "video[controls]", "[onclick]", "[data-visualization-interactive]",
+    '[contenteditable]:not([contenteditable="false"])',
+    ...[
+      "button", "checkbox", "combobox", "gridcell", "link", "listbox",
+      "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio",
+      "scrollbar", "searchbox", "slider", "spinbutton", "switch", "tab",
+      "textbox", "treeitem",
+    ].map((role) => '[role~="' + role + '"]'),
+  ].join(",");
+
+  globalThis.addEventListener("click", (event) => bubbledClicks.add(event));
+  globalThis.addEventListener("click", (event) => {
+    // Capture the path before a control can remove itself. Custom delegated
+    // controls can opt in with data-visualization-interactive.
+    const elements = event.composedPath().filter((target) => target instanceof Element);
+    const isInteractiveTarget = elements.some((element) =>
+      element.matches(interactiveSelector) ||
+      (element.hasAttribute("tabindex") && element.tabIndex >= 0)) ||
+      (elements[0] != null && getComputedStyle(elements[0]).cursor === "pointer");
+    // Use a task, not a microtask: native dispatch can run microtasks between
+    // listeners. Propagation flags are reset when dispatch finishes:
+    // https://dom.spec.whatwg.org/#concept-event-dispatch
+    globalThis.setTimeout(() => {
+      void globalThis.openai.callTool("__codex_inline_visualization_click__", {
+        isInteractive: isInteractiveTarget || event.defaultPrevented ||
+          (event.bubbles && !bubbledClicks.has(event)),
+      }).catch(() => {});
+    }, 0);
+  }, { capture: true });
+})();
+</script>
+<script>
+(() => {
+  globalThis.addEventListener("keydown", (event) => {
+    if (event.isComposing || event.altKey || event.ctrlKey || event.metaKey ||
+      event.shiftKey || !["ArrowLeft", "ArrowRight", "Escape"].includes(event.key)) {
+      return;
+    }
+    const target = event.composedPath().find((element) => element instanceof HTMLElement);
+    const editable = target?.closest("[contenteditable]");
+    const editing = target && (target.isContentEditable ||
+      (editable && editable.getAttribute("contenteditable") !== "false") ||
+      target.closest('input, textarea, select, [role="slider"], [role="spinbutton"], [role="combobox"], [role="listbox"], [role="grid"], [role="tree"], [role="tablist"], [role="menu"]'));
+    if (event.key !== "Escape" && editing) { return; }
+    // Let the widget handle the key before forwarding it across the sandbox.
+    globalThis.setTimeout(() => {
+      if (!event.defaultPrevented && globalThis.openai?.displayMode === "fullscreen") {
+        void globalThis.openai.callTool("__codex_inline_visualization_preview_key__", {
+          key: event.key,
+        }).catch(() => {});
+      }
+    }, 0);
+  });
+})();
+</script>
+
+
+
+
+<script>
+(() => {
+  const contentRange = document.createRange();
+  let previousMeasurement = null;
+  let heightReportTimer = null;
+  const reportHeight = () => {
+    const bodyChildren = Array.from(document.body.children).filter(
+      (element) =>
+        element.tagName !== "SCRIPT" &&
+        element.tagName !== "STYLE" &&
+        element.getAttribute("role") !== "tooltip",
+    );
+    const bodyStyle = globalThis.getComputedStyle(document.body);
+    const contentWidth = Math.max(
+      0,
+      Math.round(
+        globalThis.innerWidth -
+          parseFloat(bodyStyle.paddingLeft) -
+          parseFloat(bodyStyle.paddingRight),
+      ),
+    );
+    let contentHeight;
+    if (bodyChildren.length === 0) {
+      contentRange.selectNodeContents(document.body);
+      contentHeight = contentRange.getBoundingClientRect().height;
+    } else if (bodyChildren.length === 1) {
+      const [bodyChild] = bodyChildren;
+      const childRect = bodyChild.getBoundingClientRect();
+      // Child margins can collapse above the root without adding to its height.
+      // The host adds body padding separately.
+      contentHeight =
+        Math.max(bodyChild.scrollHeight, childRect.height) +
+        Math.max(
+          0,
+          childRect.top -
+            document.body.getBoundingClientRect().top -
+            parseFloat(bodyStyle.paddingTop),
+        );
+    } else {
+      const bodyTop = document.body.getBoundingClientRect().top;
+      contentHeight = Math.max(
+        ...bodyChildren.map(
+          (bodyChild) => bodyChild.getBoundingClientRect().bottom - bodyTop,
+        ),
+      );
+    }
+    const viewportHeight = globalThis.innerHeight;
+    const previous = previousMeasurement;
+    previousMeasurement = { contentHeight, contentWidth, viewportHeight };
+    if (
+      previous != null &&
+      contentWidth === previous.contentWidth &&
+      contentHeight - previous.contentHeight ===
+        viewportHeight - previous.viewportHeight
+    ) {
+      return;
+    }
+
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_height__",
+        { height: contentHeight, width: contentWidth },
+      )
+      .catch(() => {});
+  };
+  const scheduleHeightReport = () => {
+    if (heightReportTimer != null) {
+      return;
+    }
+    // Offscreen frames can suspend animation callbacks while their content loads.
+    heightReportTimer = globalThis.setTimeout(() => {
+      heightReportTimer = null;
+      reportHeight();
+    }, 0);
+  };
+
+  const resizeObserver = new ResizeObserver(scheduleHeightReport);
+  const observeBodyChildren = () => {
+    for (const element of document.body.children) {
+      resizeObserver.observe(element);
+    }
+  };
+  resizeObserver.observe(document.body);
+  observeBodyChildren();
+  new MutationObserver(() => {
+    observeBodyChildren();
+    scheduleHeightReport();
+  }).observe(document.body, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["style", "class", "height", "width"],
+  });
+  globalThis.addEventListener("resize", scheduleHeightReport);
+  reportHeight();
+})();
+</script>
+<style id="codex-visualization-document-scrollbar">html,body{scrollbar-width:none!important}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none!important}</style>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
