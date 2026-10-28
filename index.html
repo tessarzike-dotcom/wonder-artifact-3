@@ -1,30 +1,793 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wonder | Beyond First Impressions — Interactive Feature</title>
+<!-- saved from url=(0189)https://codex-inline-visualization-854bb6fcffb895b9.web-sandbox.oaiusercontent.com/?app=skybridge&locale=en-US&deviceType=desktop&unsafeSkipTargetOriginCheck=true&backgroundMode=transparent -->
+<html lang="en-US" class="transparentSkybridgeBackground desktopSkybridge dark" data-theme="dark" style="color-scheme: dark; --safe-area-inset-top: 0px; --safe-area-inset-bottom: 0px; --safe-area-inset-left: 0px; --safe-area-inset-right: 0px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>@layer sandbox-defaults{html,body,#root{margin:0;padding:0}}</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beyond First Impressions | Wonder Artifact 3</title>
+<meta name="description" content="An interactive, multimodal Grade 8 ELA learning feature for vocabulary, perspective, belonging, evidence, responsible AI use, and original student-created responses to Wonder.">
 <style>
-:root{--ink:#18253b;--muted:#52627a;--paper:#fffdf8;--blue:#244d72;--gold:#f0c76a;--teal:#d8eee9;--pink:#f8e2df;--line:#d9e0e8;--white:#fff}*{box-sizing:border-box}body{margin:0;background:#edf2f5;color:var(--ink);font:17px/1.6 Georgia,'Times New Roman',serif}.shell{max-width:1080px;margin:auto;background:var(--paper);min-height:100vh;box-shadow:0 8px 40px #12223a18}.topbar{background:var(--blue);color:white;padding:12px 5%;display:flex;justify-content:space-between;gap:12px;align-items:center;font:600 13px/1.4 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}.topbar button,.btn{border:0;border-radius:999px;padding:10px 16px;background:var(--gold);color:var(--ink);font-weight:700;cursor:pointer}.hero{padding:52px 7% 44px;background:linear-gradient(120deg,#d9e9ed,#fff4d7);position:relative;overflow:hidden}.eyebrow{font:700 13px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#345a78}.hero h1{font-size:clamp(2.5rem,6vw,5rem);line-height:.98;max-width:760px;margin:15px 0}.hero p{font-size:1.2rem;max-width:680px}.hero-art{display:flex;gap:14px;align-items:center;margin-top:26px;flex-wrap:wrap}.orb{width:86px;height:86px;border-radius:50%;background:var(--blue);color:white;display:grid;place-items:center;font:700 28px Arial,sans-serif;box-shadow:12px 10px 0 var(--gold)}.orb:nth-child(2){background:#4c8b83;box-shadow:12px 10px 0 #e7b8b1}.orb:nth-child(3){background:#b9785f;box-shadow:12px 10px 0 #c9d8ec}.caption{font:13px Arial,sans-serif;color:var(--muted);max-width:290px}.nav{display:flex;gap:8px;flex-wrap:wrap;padding:14px 5%;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fffdf8f2;z-index:3;backdrop-filter:blur(8px)}.nav button{background:#e8eef2;border:1px solid #d6e0e8;border-radius:999px;padding:9px 13px;cursor:pointer;color:var(--ink);font-weight:700}.nav button[aria-selected=true]{background:var(--blue);color:white}.content{padding:28px 7% 55px}.panel{display:none;animation:fade .25s ease}.panel.active{display:block}@keyframes fade{from{opacity:.25;transform:translateY(5px)}to{opacity:1;transform:none}}h2{font-size:2rem;line-height:1.1;margin:.2em 0 .5em}h3{font-size:1.25rem;margin:.4em 0}.dek{font-size:1.18rem;color:var(--muted);max-width:780px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0}.card{padding:20px;border:1px solid var(--line);border-radius:18px;background:white}.card h3{margin-top:0}.tag{font:700 11px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#3a657f}.pull{border-left:5px solid var(--gold);padding:8px 0 8px 18px;font-size:1.22rem;margin:22px 0}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.tabs button{padding:9px 13px;border:1px solid var(--line);background:white;border-radius:10px;cursor:pointer;font-weight:700}.tabs button.active{background:var(--teal);border-color:#8dbbb2}.perspective{display:none;padding:18px;background:#f5f8fa;border-radius:14px}.perspective.active{display:block}.choices{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.choices button{cursor:pointer;border:0;border-radius:10px;padding:10px 14px;font-weight:700}.keep{background:#d8eee9}.revise{background:#fff0c7}.reject{background:#f8e2df}.feedback{padding:12px 15px;background:#eef3f7;border-radius:12px;margin-top:12px;min-height:45px}.evidence{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}.evidence button{border:1px solid var(--line);background:white;border-radius:9px;padding:8px 10px;cursor:pointer}.hidden-note{display:none;background:#fff6da;padding:12px;border-radius:10px;margin-top:8px}.hidden-note.show{display:block}.checkrow{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}input[type=checkbox]{margin-top:7px;transform:scale(1.25)}.progress{height:8px;background:#e7edf0;border-radius:99px;overflow:hidden;margin:12px 0}.progress div{height:100%;width:0;background:#4c8b83;transition:width .2s}.quiz-option{display:block;width:100%;text-align:left;background:white;border:1px solid var(--line);border-radius:12px;padding:13px;margin:9px 0;cursor:pointer}.quiz-option:hover{border-color:var(--blue)}.small{font:13px/1.5 Arial,sans-serif;color:var(--muted)}.framework{background:#f2f6f7;border-radius:18px;padding:20px;margin:15px 0}.footer{padding:25px 7%;background:#18253b;color:white;font:13px/1.5 Arial,sans-serif}.footer strong{color:var(--gold)}.audio{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0}.audio button{border:0;background:var(--blue);color:white;border-radius:999px;padding:11px 16px;cursor:pointer;font-weight:700}.audio button.secondary{background:#e8eef2;color:var(--ink)}a{color:#244d72}@media(max-width:680px){.grid{grid-template-columns:1fr}.hero{padding-top:35px}.nav{position:static}.content{padding:25px 5% 40px}.topbar{align-items:flex-start}.evidence{grid-template-columns:1fr}.orb{width:65px;height:65px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-</style></head>
-<body><div class="shell">
-<div class="topbar"><span>Grade 8 ELA · Interactive digital feature</span><button id="readTop">▶ Listen to intro</button></div>
-<header class="hero" id="top"><div class="eyebrow">Wonder · Identity · Belonging</div><h1>Beyond First Impressions</h1><p>What happens when we decide who someone is before we really know them? Explore how <em>Wonder</em> invites readers to look beyond appearance, test assumptions, and listen to more than one perspective.</p><div class="hero-art" aria-label="Three symbolic circles represent appearance, perspective, and belonging"><div class="orb">LOOK</div><div class="orb">LISTEN</div><div class="orb">LEARN</div><div class="caption">A visual metaphor: noticing what we see, listening to another perspective, and learning from evidence.</div></div><div class="audio"><button id="readIntro">🔊 Read this feature aloud</button><button class="secondary" id="stopAudio">■ Stop audio</button><span class="small" id="audioStatus" aria-live="polite">Audio uses your browser’s text-to-speech voice.</span></div></header>
-<nav class="nav" role="tablist" aria-label="Feature sections"><button role="tab" aria-selected="true" data-target="story">1 · The big idea</button><button role="tab" aria-selected="false" data-target="nonfiction">2 · Real voices</button><button role="tab" aria-selected="false" data-target="perspectives">3 · Switch perspectives</button><button role="tab" aria-selected="false" data-target="ai-lab">4 · AI: Keep / Revise / Reject</button><button role="tab" aria-selected="false" data-target="evidence">5 · Evidence lab</button><button role="tab" aria-selected="false" data-target="check">6 · Build your feature</button><button role="tab" aria-selected="false" data-target="framework-panel">7 · Course connections</button></nav>
-<main class="content">
-<section class="panel active" id="story" role="tabpanel"><div class="tag">01 · The big idea</div><h2>People are more than the first thing we notice.</h2><p class="dek">In R. J. Palacio’s <em>Wonder</em>, Auggie Pullman’s facial difference influences how some people react to him. But appearance does not tell the whole story of a person’s humor, interests, worries, courage, or relationships.</p><div class="grid"><article class="card"><div class="tag">What a first impression can do</div><h3>Fill in the blanks</h3><p>When people have little information, they may rely on assumptions. Those assumptions can shape whether someone is included, avoided, or treated unfairly.</p></article><article class="card"><div class="tag">What perspective can do</div><h3>Make the picture bigger</h3><p>Different narrators reveal different feelings and motivations. Looking through more than one perspective helps readers question an easy explanation.</p></article></div><div class="pull">Essential question: How do our perceptions of others influence the way we treat them?</div><h3>Explore the idea</h3><p>Choose a statement to reveal a thinking prompt.</p><div class="tabs"><button class="active" data-think="think1">“I can tell by looking.”</button><button data-think="think2">“I need more information.”</button><button data-think="think3">“I changed my mind.”</button></div><div class="feedback" id="thinkBox" aria-live="polite">Ask yourself: What can appearance tell us—and what can it never prove about a person’s character?</div><p class="small">This feature paraphrases ideas and character situations from the novel; it does not replace close reading of the book.</p></section>
-<section class="panel" id="nonfiction" role="tabpanel"><div class="tag">02 · Nonfiction text set · Real voices</div><h2>Beyond the novel: listen to people describe their own lives</h2><p class="dek">A fictional character can help us think, but nonfiction accounts remind us that real people are the experts on their own experiences. Read or listen to at least one first-person account below, then compare its details with <em>Wonder</em> and the AI-generated draft. Do not assume one person speaks for everyone with a facial difference.</p><div class="grid"><article class="card"><div class="tag">First-person account · AboutFace</div><h3>Morgan’s story</h3><p>Morgan describes living with Crouzon Syndrome, being treated differently, and having goals, dreams, and insecurities beyond appearance.</p><p><a href="https://aboutface.ca/our_community/community-stories/morgans-story/" target="_blank" rel="noopener">Read Morgan’s first-person story ↗</a></p><p class="small">Reading focus: Which details show Morgan’s individuality? What does Morgan say that a broad assumption might miss?</p></article><article class="card"><div class="tag">Youth voices · AboutFace video project</div><h3>Beyond My Face</h3><p>Young people with facial differences talk about interests and future goals as part of a campaign to challenge stereotypes.</p><p><a href="https://aboutface.ca/news/new-beyond-my-face-video/" target="_blank" rel="noopener">Explore the video and project description ↗</a></p><p class="small">Listening/visual focus: What do the speakers choose to share about themselves? How do their own words challenge assumptions?</p></article><article class="card"><div class="tag">Optional additional account · AboutFace</div><h3>Fernanda’s story</h3><p>Fernanda writes about growing up with a facial difference, bullying, support, and the importance of not having to explain herself constantly.</p><p><a href="https://aboutface.ca/our_community/community-stories/fernanda/" target="_blank" rel="noopener">Read Fernanda’s first-person story ↗</a></p><p class="small">Reading focus: Which experiences overlap with or differ from Morgan’s? Why should we preserve those differences?</p></article></div><div class="framework"><h3>Compare without generalizing</h3><p><strong>1. What does the person say about their own experience?</strong> Record a detail or short quotation and the source name.</p><p><strong>2. What connects to <em>Wonder</em>?</strong> Identify a theme or situation that is similar, while noting that a real person’s life is not the same as a fictional character’s story.</p><p><strong>3. What complicates the AI draft?</strong> Identify a detail about interests, goals, relationships, or individuality that the AI sentence leaves out.</p><p><strong>4. What can you responsibly conclude?</strong> Write “This person’s account shows…” rather than “Everyone with a facial difference…”</p></div><label for="sourceNote"><strong>My source note:</strong> Record a detail from the nonfiction account and explain how it changes or complicates your first interpretation.</label><textarea id="sourceNote" rows="4" style="width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;font:inherit" placeholder="In the account by ___, the person describes ___. This adds to my understanding because…"></textarea><div class="audio"><button id="speakSourceNote">🔊 Listen to my source note</button><button class="secondary" id="clearSourceNote">Clear note</button></div><p class="small">Respectful reading reminder: focus on the person’s own words, agency, interests, and ideas—not on guessing medical details or treating appearance as the whole story.</p></section>
-<section class="panel" id="perspectives" role="tabpanel"><div class="tag">02 · Switch perspectives</div><h2>One story, more than one point of view</h2><p class="dek">Select a perspective to explore how the same situation can carry different feelings and information. These are instructional paraphrases, not quotations from the novel.</p><div class="tabs"><button class="active" data-pers="auggie">Auggie</button><button data-pers="classmate">A classmate</button><button data-pers="family">A family member</button></div><div id="pers-auggie" class="perspective active"><h3>Auggie’s perspective</h3><p>Entering a new school can mean wondering whether others will see his interests and personality—or focus only on his appearance. He wants to be treated as a whole person.</p><p><strong>Notice:</strong> His perspective centers the emotional impact of other people’s reactions.</p></div><div id="pers-classmate" class="perspective"><h3>A classmate’s perspective</h3><p>A classmate may feel curious, uncertain, or influenced by what peers say. That uncertainty can lead to an unkind choice—or to reflection and a change in behavior.</p><p><strong>Notice:</strong> A narrator’s limited knowledge can shape the tone and what the reader understands.</p></div><div id="pers-family" class="perspective"><h3>A family member’s perspective</h3><p>A family member may want Auggie to feel safe and accepted while also knowing he needs room to make friendships and decisions himself.</p><p><strong>Notice:</strong> Care and concern can coexist with a different view of what support should look like.</p></div><div class="framework"><strong>Click-to-think:</strong> Which perspective might reveal information the others do not know? What would you need to read in the novel before making a claim?</div></section>
-<section class="panel" id="ai-lab" role="tabpanel"><div class="tag">03 · AI literacy lab</div><h2>Can you trust an AI-generated interpretation?</h2><p class="dek">An AI tool can produce a confident-sounding description that is incomplete or too general. Your job is to check it against the novel and decide what deserves to stay.</p><div class="card"><div class="tag">AI-generated draft model · created for this learning activity</div><h3>“Auggie’s experience is mainly about being different. Everyone notices his appearance, and he just wants people to be nice to him.”</h3><p>This draft captures part of the topic, but it oversimplifies the character and makes a broad claim about “everyone.” It leaves out relationships, humor, interests, choices, and changes in other characters.</p><p class="small">The model sentence is a newly generated instructional example, not a quotation from <em>Wonder</em>.</p></div><h3>Make a decision</h3><p>Choose Keep, Revise, or Reject. Then compare your reasoning with the feedback.</p><div class="choices"><button class="keep" data-decision="keep">✓ Keep</button><button class="revise" data-decision="revise">✎ Revise</button><button class="reject" data-decision="reject">✕ Reject</button></div><div class="feedback" id="decisionFeedback" aria-live="polite">Your decision will appear here.</div><h3>Try a stronger revision</h3><p>One possible revision: <em>Auggie’s experience includes the impact of others’ assumptions, but the novel also develops his personality and relationships through multiple perspectives. Readers should use specific scenes to show how belonging changes over time.</em></p><p>Before using this revision, locate scenes and evidence in your own copy of the novel. Do not treat AI output as proof.</p></section>
-<section class="panel" id="evidence" role="tabpanel"><div class="tag">04 · Evidence lab</div><h2>Move from an idea to evidence</h2><p class="dek">Tap each evidence target to reveal what to look for in the novel. Add your own page number, detail, or brief quotation from the edition you are reading.</p><div class="evidence"><div><strong>Target A · First impressions</strong><div class="small">Look for a scene where a character reacts to Auggie’s appearance.</div><div class="hidden-note" id="noteA">Record the scene and page number. What does the character assume? What does the text actually show? Explain how the reaction affects belonging.</div></div><button data-note="noteA">Reveal evidence prompt</button></div><div class="evidence"><div><strong>Target B · A changing relationship</strong><div class="small">Look for a moment when a character’s understanding or behavior changes.</div><div class="hidden-note" id="noteB">Record the action or dialogue that shows change. Does the character learn something new, reconsider a belief, or respond to peer pressure?</div></div><button data-note="noteB">Reveal evidence prompt</button></div><div class="evidence"><div><strong>Target C · More than one perspective</strong><div class="small">Compare how two narrators or characters understand a situation.</div><div class="hidden-note" id="noteC">Write one detail from each perspective. Explain what the second view adds, complicates, or corrects about the first.</div></div><button data-note="noteC">Reveal evidence prompt</button></div><h3>Quick check</h3><p>Which statement is the strongest evidence-based approach?</p><button class="quiz-option" data-quiz="a">A. “Auggie is treated unfairly because everyone is mean.”</button><button class="quiz-option" data-quiz="b">B. “In a specific scene, a character’s reaction shows an assumption about Auggie; this supports the claim that first impressions can affect belonging.”</button><button class="quiz-option" data-quiz="c">C. “AI said Auggie feels left out, so that must be true.”</button><div class="feedback" id="quizFeedback" aria-live="polite">Choose an answer to check your reasoning.</div></section>
-<section class="panel" id="check" role="tabpanel"><div class="tag">05 · Build your feature</div><h2>Plan your own “See It From My Perspective” feature</h2><p class="dek">Use this checklist to prepare an evidence-based argument for a peer or public audience. Check each step as you complete it.</p><div id="taskList"><label class="checkrow"><input type="checkbox"><span><strong>Claim:</strong> I answer how assumptions or perspective affect a character’s experience of belonging.</span></label><label class="checkrow"><input type="checkbox"><span><strong>Evidence 1:</strong> I include a relevant detail or brief quotation from <em>Wonder</em> and a page number.</span></label><label class="checkrow"><input type="checkbox"><span><strong>Evidence 2:</strong> I use a second scene, a different narrator, or a credible additional source.</span></label><label class="checkrow"><input type="checkbox"><span><strong>Reasoning:</strong> I explain how each piece of evidence supports my claim.</span></label><label class="checkrow"><input type="checkbox"><span><strong>Multimodal choice:</strong> I add a purposeful visual, audio narration, or interactive element with a caption/alt text.</span></label><label class="checkrow"><input type="checkbox"><span><strong>Perspective:</strong> I consider another character’s viewpoint without treating it as automatically correct.</span></label><label class="checkrow"><input type="checkbox"><span><strong>AI reflection:</strong> I identify what I kept, revised, or rejected from AI and explain why using text evidence.</span></label></div><div class="progress"><div id="progressBar"></div></div><p id="progressText" class="small" aria-live="polite">0 of 7 steps complete.</p><label for="claimBox"><strong>Draft your claim:</strong></label><textarea id="claimBox" rows="3" style="width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;font:inherit" placeholder="I think the novel shows that… because…"></textarea><div class="audio"><button id="speakClaim">🔊 Listen to my claim</button><button class="secondary" id="clearClaim">Clear draft</button></div><p class="small">Your claim stays in this open page while you use it. Copy it into your class document if you need to save it.</p></section>
-<section class="panel" id="framework-panel" role="tabpanel"><div class="tag">06 · Instructor / course connections</div><h2>How this artifact connects to the course framework</h2><p class="dek">This interactive model supports the Grade 8 unit “Identity, Belonging, and Perspective: Seeing Beyond Assumptions.” It is a mentor feature and AI-evaluation activity—not a substitute for students’ own reading, evidence, or writing.</p><div class="framework"><h3>SAMR</h3><p><strong>Best-supported level for this artifact: Modification.</strong> The task is redesigned as a connected inquiry: students move between the novel, linked first-person nonfiction accounts, a labeled AI-generated interpretation, and their own evidence notes. They compare representations, record source-based reasoning, and can listen to their own synthesis. This is more than a digital worksheet, but the current individual activity can still be completed on paper, so I do not claim that the artifact itself reaches Redefinition.</p><p><strong>Possible Redefinition extension:</strong> Students collaboratively create and publish an accessible digital feature that pairs their evidence-based analysis with approved links to first-person accounts, captions or audio, and an AI-transparency note. With permission, they could invite feedback from a school audience or a relevant community organization and revise their public-facing explanation in response. That authentic, shareable, multimodal exchange—not clicking alone—is the stronger Redefinition case.</p></div><div class="grid"><article class="card"><h3>ELA principle 1 · Complex text</h3><p>Students return to <em>Wonder</em> to interpret characterization, dialogue, and differences among narrators. The “Switch perspectives” section frames a question, but the novel remains the source students must read closely to answer it.</p></article><article class="card"><h3>ELA principle 2 · Use evidence</h3><p>The evidence lab asks students to identify scenes, page numbers, and details, then explain how evidence supports a claim. The quiz contrasts specific, reasoned evidence with broad claims and unsupported AI output.</p></article><article class="card"><h3>ELA principle 3 · Build background knowledge</h3><p>The nonfiction text set adds first-person accounts from people with facial differences. Students build knowledge about varied lived experiences, then compare these accounts with the novel and AI draft. The prompts explicitly warn students not to treat one person’s story as representative of everyone.</p></article><article class="card"><h3>Science of Reading (SOR)</h3><p>The artifact supports comprehension and language through explicit vocabulary/concept framing, short chunks of text, repeated exposure to key ideas, retrieval through the quiz, and oral-language support through read-aloud. It aligns with the language-comprehension side of the Reading Rope—background knowledge, vocabulary, language structures, verbal reasoning, and literacy knowledge. It does not replace systematic decoding/word-reading instruction.</p></article></div><div class="framework"><h3>Layered multimodality</h3><ul><li><strong>Visual:</strong> color-coded sections, symbolic “LOOK / LISTEN / LEARN” circles, cards, and visual hierarchy organize the central idea.</li><li><strong>Auditory:</strong> browser text-to-speech reads the introduction or student notes aloud; students can also explore a linked video project where young people speak about their own interests and goals.</li><li><strong>Interactivity:</strong> students navigate between literary and nonfiction sources, record a source note, evaluate an AI claim, reveal evidence prompts, and listen back to their own synthesis.</li></ul><p>The modes contribute to one interpretation rather than operating as decoration: a student reads a first-person account, listens to youth describe themselves in their own voices, records a detail, and compares it with the AI draft and <em>Wonder</em>. Visual organization keeps the sources distinct; audio makes the speaker’s own voice available; the comparison prompt requires students to explain how the nonfiction detail complicates an assumption. This supports the unit’s movement from literary analysis to evidence-based, multimodal communication.</p></div><div class="framework"><h3>Use of generative AI</h3><p><strong>Tool:</strong> ChatGPT (OpenAI), used to draft the initial instructional concept and sample AI-generated interpretation for this artifact.</p><p><strong>Prompt 1:</strong> “Using my Grade 8 ELA unit on <em>Wonder</em>, identity, belonging, and perspective, design a student-facing interactive mentor feature that helps students question first impressions and compare perspectives. Include clickable learning steps and an evidence-based writing task. Do not write students’ final response.”</p><p><strong>Prompt 2:</strong> “Create a short, clearly labeled AI-generated draft interpretation of Auggie’s experience that is plausible but oversimplified, so Grade 8 students can evaluate it with Keep, Revise, or Reject decisions. Do not use direct quotations from the novel or present the AI draft as factual evidence.”</p><p><strong>Prompt 3:</strong> “Explain how this interactive feature can demonstrate SAMR, the three ELA principles—complex text, using evidence, and building background knowledge—and Science of Reading language-comprehension strands. Identify visual, auditory, and interactive modes, and explain how they work together.”</p><p><strong>Prompt 4:</strong> “Revise the Grade 8 <em>Wonder</em> artifact to include a short nonfiction text set with first-person accounts from people with facial differences. Use credible organizations’ own story pages or video projects, provide direct source links, and add prompts for comparing lived experience with the novel and an AI-generated claim. Explicitly remind students not to generalize from one person’s experience.”</p><p><strong>Prompt 5:</strong> “Calibrate the SAMR explanation honestly. Identify the level the current artifact actually supports, distinguish it from an extension that could reach Redefinition, and explain the role of an authentic audience and student-created multimodal publication.”</p><p><strong>Evaluation and refinement:</strong> I treated AI output as a starting point, not an authority. I edited the model to avoid invented quotations and unsupported specifics, labeled the sample as an AI-generated draft, required students to verify claims against their own copy of the novel, and added explicit evidence prompts. In response to instructor feedback, I added linked first-person nonfiction sources, comparison prompts that discourage generalization, and a more precise SAMR claim: Modification for the current activity, with Redefinition reserved for a student-created publication shared with an authentic audience. I also included accessible text, keyboard-operable buttons, audio controls, and a clear distinction between AI suggestions and student-authored analysis. Students—not AI—make and justify the final interpretive decisions.</p></div><p class="small">Standards connection: NYS Grade 8 ELA standards in the unit plan include 8R1 (textual evidence), 8R3 (characterization/events), 8R6 (point of view and perspective), 8R7 (media), 8R9 (connections), and 8W1/8W5 (argument and revision).</p></section>
-</main><footer class="footer"><strong>Beyond First Impressions</strong><br>Interactive mentor feature for the unit <em>Identity, Belonging, and Perspective: Seeing Beyond Assumptions</em> · Grade 8 ELA<br><span>Read the novel. Check the evidence. Make your own meaning.</span></footer></div>
+:root{--ink:#202637;--muted:#596477;--paper:#fffdf8;--cream:#f4efe5;--plum:#573a69;--coral:#d96d57;--teal:#287d7a;--gold:#e7b84d;--line:#ddd6ca;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:#185e68;text-underline-offset:3px}button,select,textarea,input{font:inherit}button{cursor:pointer;border:0;border-radius:999px;padding:.7rem 1.05rem;background:var(--plum);color:#fff;font-weight:700}button:focus-visible,a:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:1rem}.skip:focus{left:1rem;z-index:9}
+header{background:var(--plum);color:#fff;padding:1.1rem max(1.2rem,calc((100vw - 1120px)/2)) 3.2rem;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;border:38px solid rgba(255,255,255,.1);right:-70px;top:-95px}
+.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.78rem;font-weight:800;color:#f7d9a0}
+h1{font-size:clamp(2.5rem,6vw,5.2rem);line-height:.98;max-width:800px;margin:.7rem 0 1rem;letter-spacing:-.045em}
+.lede{font-size:clamp(1.08rem,2vw,1.35rem);max-width:760px;color:#f7f0f8}
+.hero-row{display:grid;grid-template-columns:1.4fr .8fr;gap:2rem;align-items:center;max-width:1120px;margin:auto}
+.hero-art{width:100%;max-width:350px;justify-self:center}
+.pill{display:inline-block;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:.25rem .65rem;font-size:.82rem;margin:.25rem .3rem .25rem 0}
+nav{position:sticky;top:0;background:#fffdf8f2;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:5;padding:.6rem max(1rem,calc((100vw - 1120px)/2));display:flex;gap:.45rem;overflow-x:auto}
+nav a{white-space:nowrap;text-decoration:none;font-size:.9rem;font-weight:750;color:var(--ink);padding:.45rem .75rem;border-radius:999px}nav a:hover{background:var(--cream)}
+main{max-width:1120px;margin:auto;padding:1rem 1.25rem 4rem}
+section{padding:2.6rem 0;border-bottom:1px solid var(--line);scroll-margin-top:80px}
+h2{font-size:clamp(1.8rem,3.4vw,2.8rem);line-height:1.1;letter-spacing:-.03em;margin:.3rem 0 .9rem}
+h3{line-height:1.2;margin:.25rem 0 .6rem}
+.kicker{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:850;color:var(--teal)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.2rem;box-shadow:0 8px 24px #322a1708}
+.card.soft{background:var(--cream)}.card.plum{background:#f2eaf5;border-color:#ded0e7}.card.teal{background:#e8f3f1;border-color:#c9e2dd}
+.big{font-size:2rem;line-height:1}
+.tag{display:inline-block;font-size:.76rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border-radius:6px;padding:.18rem .45rem;background:#e8f3f1;color:#195c59}
+.quote{font-family:Georgia,serif;font-size:1.35rem;line-height:1.45;border-left:5px solid var(--coral);padding:.4rem 0 .4rem 1rem;margin:1rem 0}
+.note{font-size:.9rem;color:var(--muted)}
+button.secondary{background:#fff;color:var(--plum);border:1px solid #c9b8d3}
+button.tealbtn{background:var(--teal)}button.goldbtn{background:#785616}
+.controls{display:flex;flex-wrap:wrap;gap:.55rem;margin:.8rem 0}
+.perspectives{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:1rem}
+.perspective{border:2px solid transparent;text-align:left;background:#fff;color:var(--ink);border-radius:18px;padding:1rem;box-shadow:0 0 0 1px var(--line)}
+.perspective[aria-pressed="true"]{border-color:var(--teal);background:#e8f3f1}
+.perspective .emoji{font-size:2rem;display:block;margin-bottom:.4rem}
+#perspective-output{min-height:160px}
+.choice-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+fieldset{border:0;padding:0;margin:1rem 0}legend{font-weight:800;margin-bottom:.5rem}
+label.choice{display:flex;gap:.6rem;align-items:flex-start;padding:.75rem;border:1px solid var(--line);border-radius:12px;margin:.45rem 0;background:#fff}
+input[type=radio],input[type=checkbox]{margin-top:.35rem;accent-color:var(--plum)}
+.feedback{margin-top:.75rem;padding:.8rem 1rem;border-radius:12px;background:#f4efe5;min-height:3rem}
+textarea,select,input[type=text]{width:100%;border:1px solid #b9b1a6;border-radius:12px;padding:.75rem;background:#fff;color:var(--ink)}
+textarea{min-height:100px;resize:vertical}
+.step{display:flex;gap:.8rem;align-items:flex-start;margin:1rem 0}
+.stepno{display:grid;place-items:center;min-width:2.2rem;height:2.2rem;border-radius:50%;background:var(--coral);color:#fff;font-weight:900}
+.checklist label{display:flex;gap:.6rem;padding:.5rem 0}
+.progress{height:9px;background:#e5ded2;border-radius:99px;overflow:hidden}.progress span{display:block;width:0;height:100%;background:var(--teal);transition:width .2s}
+svg{max-width:100%;height:auto}
+footer{background:#202637;color:#fff;padding:2rem 1.25rem}footer .inner{max-width:1120px;margin:auto}
+@media(max-width:760px){.hero-row,.grid,.grid.two,.choice-row{grid-template-columns:1fr}.hero-art{max-width:220px}.perspectives{grid-template-columns:1fr}.hero-row{gap:1rem}header{padding-bottom:2rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<style>html, body, #root {
+      margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;
+      
+    }
+html,body,#root{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}html,body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,Arial,sans-serif!important}button,input,textarea,select{font-family:inherit}html{background-color:transparent}html.chatgptOled.dark,html.mobileSkybridge.dark{background-color:#000}@supports (font: -apple-system-body){html.mobileSkybridge{font:-apple-system-body}}html.desktopSkybridge.dark{background-color:#1e1e1e}html.transparentSkybridgeBackground,html.transparentSkybridgeBackground.dark{background-color:transparent}html.androidSkybridge,html.androidSkybridge body,html.androidSkybridge *{-webkit-tap-highlight-color:rgba(255,255,255,0)}html.androidSkybridge *::selection,html.androidSkybridge *::-moz-selection{background:#fff0;color:inherit}</style></head>
+<body data-new-gr-c-s-check-loaded="14.1341.0" data-gr-ext-installed="">
+<a class="skip" href="https://codex-inline-visualization-854bb6fcffb895b9.web-sandbox.oaiusercontent.com/?app=skybridge&amp;locale=en-US&amp;deviceType=desktop&amp;unsafeSkipTargetOriginCheck=true&amp;backgroundMode=transparent#main">Skip to content</a>
+<header>
+  <div class="hero-row">
+    <div>
+      <div class="eyebrow">Grade 8 ELA · Interactive mentor feature</div>
+      <h1>Beyond First Impressions</h1>
+      <p class="lede">What changes when we pause, check the evidence, and try to see a person from more than one perspective?</p>
+      <p>Explore identity, belonging, and representation through <em>Wonder</em> by R. J. Palacio. Then investigate how an AI-generated interpretation can sound convincing while leaving out important complexity.</p>
+      <span class="pill">Build vocabulary</span><span class="pill">Read closely</span><span class="pill">Question AI</span><span class="pill">Create and share</span>
+      <div class="controls"><button onclick="speakSection('intro')">▶ Listen to introduction</button><button class="secondary" onclick="stopSpeech()">■ Stop audio</button></div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 360 310" role="img" aria-labelledby="heroTitle heroDesc">
+      <title id="heroTitle">Three overlapping windows</title><desc id="heroDesc">Three overlapping colorful windows represent different perspectives on the same person.</desc>
+      <rect x="28" y="42" width="170" height="205" rx="28" fill="#e7b84d" transform="rotate(-8 113 145)"></rect>
+      <rect x="101" y="28" width="170" height="205" rx="28" fill="#d96d57" transform="rotate(8 186 130)"></rect>
+      <rect x="82" y="92" width="170" height="190" rx="28" fill="#287d7a" transform="rotate(-2 167 187)"></rect>
+      <circle cx="165" cy="145" r="36" fill="#fffdf8"></circle><path d="M103 240 Q112 177 165 177 Q218 177 228 240" fill="#fffdf8"></path>
+      <circle cx="165" cy="145" r="51" fill="none" stroke="#573a69" stroke-width="3" stroke-dasharray="5 7"></circle>
+      <path d="M22 276 C80 247 100 299 157 276 S249 252 330 282" stroke="#fffdf8" stroke-width="4" fill="none" opacity=".8"></path>
+    </svg>
+  </div>
+</header>
+<nav aria-label="Main navigation">
+<a href="#big-idea">Big idea</a><a href="#vocabulary">Vocabulary</a><a href="#perspectives">Switch perspectives</a><a href="#ai-lab">AI lab</a><a href="#evidence">Evidence lab</a><a href="#build">Feature plan</a><a href="#final-project">Final project</a>
+</nav>
+<main id="main">
+<section id="big-idea">
+  <div class="kicker">01 · Start here</div><h2>One person. More than one story.</h2>
+  <div class="grid two">
+    <div class="card soft">
+      <div class="big">👀</div><h3>First impressions are fast.</h3>
+      A person may notice appearance, a single action, or what other people say. That information can shape a first impression, but it cannot tell a whole life story.
+    </div>
+    <div class="card teal">
+      <div class="big">🔎</div><h3>Interpretations need evidence.</h3>
+      Readers can slow down, examine what the text actually shows, and revise a first idea when new details or another perspective changes the picture.
+    </div>
+  </div>
+  <p class="quote">A strong interpretation does not just say what a character is like. It explains how the text leads us to that interpretation—and what we may still be missing.</p>
+  <div class="card">
+    <h3>Essential question</h3><p><strong>How do identity, assumptions, and perspective shape a character’s experience of belonging?</strong></p>
+    <p class="note">As you explore, keep the novel as your primary source. This feature does not replace reading the complex text; it gives you a structure for thinking about it.</p>
+  </div>
+</section>
+
+
+<section id="vocabulary">
+  <div class="kicker">02 · Build background knowledge</div><h2>Vocabulary before you explore</h2>
+  <p>Learn these words before analyzing <em>Wonder</em> and real-life stories. Knowing the words will help you explain ideas clearly and notice how people experience the world differently.</p>
+  <div class="grid">
+    <article class="card soft"><span class="big">🪞</span><h3>Identity</h3><p>The qualities, experiences, relationships, and interests that help make someone who they are.</p><p class="note"><strong>Example:</strong> Auggie’s identity includes much more than his appearance.</p></article>
+    <article class="card teal"><span class="big">🤝</span><h3>Belonging</h3><p>The feeling of being accepted, included, and valued by a group.</p><p class="note"><strong>Example:</strong> A student feels belonging when classmates make room for their ideas.</p></article>
+    <article class="card"><span class="big">👀</span><h3>Appearance</h3><p>The way a person looks on the outside.</p><p class="note"><strong>Example:</strong> Appearance alone does not tell us someone’s personality or story.</p></article>
+    <article class="card plum"><span class="big">🪟</span><h3>Perspective</h3><p>The way a person sees, understands, or experiences a situation.</p><p class="note"><strong>Example:</strong> Two characters may experience the same event differently.</p></article>
+    <article class="card"><span class="big">⚠️</span><h3>Assumption</h3><p>A belief we accept without having enough evidence to know it is true.</p><p class="note"><strong>Example:</strong> Assuming someone is unfriendly because they are quiet.</p></article>
+    <article class="card teal"><span class="big">💛</span><h3>Empathy</h3><p>Trying to understand another person’s feelings or experiences.</p><p class="note"><strong>Example:</strong> Listening to someone’s story instead of deciding how they must feel.</p></article>
+  </div>
+  <div class="card" style="margin-top:1rem">
+    <h3>Try it: choose the best vocabulary word</h3>
+    <p>Read each example and choose the word that best matches it.</p>
+    <label for="vocab-q1"><strong>1.</strong> You learn that a classmate loves art, helps their younger sibling, and plays soccer. These details help you understand their…</label>
+    <select id="vocab-q1"><option value="">Choose a word</option><option>Belonging</option><option>Identity</option><option>Appearance</option><option>Assumption</option></select>
+    <label for="vocab-q2"><strong>2.</strong> You decide someone is mean before talking to them or learning anything about them. This is an…</label>
+    <select id="vocab-q2"><option value="">Choose a word</option><option>Empathy</option><option>Perspective</option><option>Assumption</option><option>Belonging</option></select>
+    <label for="vocab-q3"><strong>3.</strong> You listen carefully to a person describe what it feels like to be left out and try to understand their experience. You are practicing…</label>
+    <select id="vocab-q3"><option value="">Choose a word</option><option>Appearance</option><option>Empathy</option><option>Identity</option><option>Assumption</option></select>
+    <button onclick="checkVocab()">Check my answers</button>
+    <div class="feedback" id="vocab-feedback" aria-live="polite">Choose an answer for each question, then check your understanding.</div>
+    <label for="vocab-own"><strong>Connect it to the novel:</strong> Which word do you think will be most important in <em>Wonder</em>, and why?</label>
+    <textarea id="vocab-own" placeholder="I think ______ will be important because…"></textarea>
+    <button class="secondary" onclick="speakText(document.getElementById('vocab-own').value || 'Write which vocabulary word will be most important and why.')">▶ Listen to my response</button>
+  </div>
+  <p class="note">Reading connection: Explicitly learning key words, discussing examples, and using the words again during reading builds vocabulary and background knowledge. Return to these terms as you explore each activity.</p>
+</section>
+
+<section id="perspectives">
+  <div class="kicker">03 · Interactive perspective switch</div><h2>Switch the lens</h2>
+  <p>The same event can be interpreted differently depending on who is looking, what they know, and what they may not understand yet. Select a lens, then compare what each lens notices.</p>
+  <div class="perspectives" role="group" aria-label="Choose a perspective">
+    <button class="perspective" aria-pressed="true" data-lens="student" onclick="setLens('student')"><span class="emoji">🧑‍🎓</span><strong>A student’s lens</strong><br><span class="note">Belonging and peer reactions</span></button>
+    <button class="perspective" aria-pressed="false" data-lens="family" onclick="setLens('family')"><span class="emoji">🏡</span><strong>A family lens</strong><br><span class="note">Care, worry, and support</span></button>
+    <button class="perspective" aria-pressed="false" data-lens="observer" onclick="setLens('observer')"><span class="emoji">🪟</span><strong>An outside observer</strong><br><span class="note">What is visible—and unknown</span></button>
+  </div>
+  <div class="card" id="perspective-output" aria-live="polite" style="margin-top:1rem">
+    <span class="tag">Student’s lens</span><h3>What might this person notice?</h3>
+    A student may notice who includes someone, who avoids eye contact, or how classmates respond. But a single moment cannot prove what everyone thinks or why they acted that way.
+    <p><strong>Check the text:</strong> Which action, dialogue, or reaction in <em>Wonder</em> supports your interpretation? What else could explain the moment?</p>
+  </div>
+  <div class="card soft" style="margin-top:1rem">
+    <h3>Try it: what does this lens make easier to see?</h3>
+    <label for="lens-reflection">Write one thing this perspective helps you notice and one thing it cannot tell you.</label>
+    <textarea id="lens-reflection" placeholder="This lens helps me notice… It cannot tell me…"></textarea>
+    <button class="secondary" onclick="speakText(document.getElementById('lens-reflection').value || 'Write one thing this perspective helps you notice and one thing it cannot tell you.')">▶ Listen to my reflection</button>
+  </div>
+</section>
+
+<section id="ai-lab">
+  <div class="kicker">04 · Responsible AI investigation</div><h2>Can a polished answer still be incomplete?</h2>
+  <p>The following is a <strong>fictional AI-generated sample</strong> created for this learning activity. It is not a quotation from the novel and should not be treated as evidence.</p>
+  <div class="card plum">
+    <div class="grid two" style="align-items:center">
+      <div><span class="tag">AI-generated sample · inspect, don't trust automatically</span>
+        <p class="quote" style="margin-bottom:.4rem">“A person who looks different will probably feel isolated, and kind classmates can solve the problem by including them.”</p>
+        <p class="note">This sample sounds clear, but it makes broad assumptions and simplifies belonging.</p>
+        <div class="controls"><button onclick="speakText('AI-generated sample. A person who looks different will probably feel isolated, and kind classmates can solve the problem by including them.')">▶ Listen to sample</button></div>
+      </div>
+      <svg viewBox="0 0 240 180" role="img" aria-label="Magnifying glass over a speech bubble">
+        <rect x="24" y="22" width="150" height="92" rx="18" fill="#fff" stroke="#573a69" stroke-width="3"></rect>
+        <path d="M66 113 L56 134 L91 114" fill="#fff" stroke="#573a69" stroke-width="3" stroke-linejoin="round"></path>
+        <path d="M52 52 H145 M52 72 H128 M52 92 H112" stroke="#d96d57" stroke-width="6" stroke-linecap="round"></path>
+        <circle cx="155" cy="110" r="38" fill="#e7b84d" fill-opacity=".6" stroke="#287d7a" stroke-width="7"></circle>
+        <path d="M183 138 L216 168" stroke="#287d7a" stroke-width="12" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="choice-row" style="margin-top:1rem">
+    <div class="card">
+      <h3>Make a judgment</h3>
+      <p>Choose the best first response to the AI sample.</p>
+      <fieldset>
+        <legend>What would you do with this claim?</legend>
+        <label class="choice"><input type="radio" name="ai-choice" value="keep"> <span><strong>Keep</strong> it as written.</span></label>
+        <label class="choice"><input type="radio" name="ai-choice" value="revise"> <span><strong>Revise</strong> it to be more precise and less general.</span></label>
+        <label class="choice"><input type="radio" name="ai-choice" value="reject"> <span><strong>Reject</strong> it because its assumptions are not supported yet.</span></label>
+      </fieldset>
+      <button onclick="checkAI()">Check my thinking</button><div class="feedback" id="ai-feedback" aria-live="polite">Your explanation matters more than selecting one label. Use the feedback to sharpen your reasoning.</div>
+    </div>
+    <div class="card soft">
+      <h3>Find the problem</h3>
+      <div class="checklist">
+        <label><input type="checkbox" class="ai-issue" value="general"> It treats people who look different as if they all feel the same way.</label>
+        <label><input type="checkbox" class="ai-issue" value="simple"> It makes belonging sound like a problem that kindness alone can instantly solve.</label>
+        <label><input type="checkbox" class="ai-issue" value="evidence"> It provides no evidence from <em>Wonder</em>.</label>
+        <label><input type="checkbox" class="ai-issue" value="complete"> It represents every character’s experience completely.</label>
+      </div>
+      <button class="secondary" onclick="checkIssues()">Check selected observations</button><div class="feedback" id="issue-feedback" aria-live="polite">Select the problems you notice.</div>
+    </div>
+  </div>
+  <div class="card teal" style="margin-top:1rem">
+    <h3>Revise the AI sample</h3>
+    <p>Write a more careful version. Avoid claiming that one character’s experience represents everyone. Leave room for evidence and complexity.</p>
+    <textarea id="ai-revision" placeholder="A more careful interpretation would be…"></textarea>
+    <div class="controls"><button onclick="speakText(document.getElementById('ai-revision').value || 'Write your revised interpretation.')">▶ Listen to revision</button><button class="secondary" onclick="copyText('ai-revision')">Copy revision</button></div>
+  </div>
+</section>
+
+<section id="evidence">
+  <div class="kicker">05 · Close-reading evidence lab</div><h2>Move from opinion to evidence</h2>
+  <p>Return to the complex text, <em>Wonder</em>. Choose a specific moment and gather evidence before deciding what it means. Page numbers vary by edition, so use your own copy and record the chapter or page.</p>
+  <div class="grid two">
+    <div class="card">
+      <h3>Evidence finder</h3>
+      <div class="step"><span class="stepno">1</span><div><strong>Notice</strong><br>Find an action, a line of dialogue, a reaction, or a narrator’s detail connected to identity or belonging.</div></div>
+      <div class="step"><span class="stepno">2</span><div><strong>Record</strong><br>Write a short quotation or accurate paraphrase and note the page/chapter.</div></div>
+      <div class="step"><span class="stepno">3</span><div><strong>Explain</strong><br>Explain how the detail supports your interpretation. Do not let the quotation speak for itself.</div></div>
+      <div class="step"><span class="stepno">4</span><div><strong>Complicate</strong><br>Ask what another character might notice or what the evidence does not prove.</div></div>
+    </div>
+    <div class="card soft">
+      <h3>Build an evidence card</h3>
+      <label for="claim">My working claim</label><textarea id="claim" placeholder="The novel suggests that belonging…"></textarea>
+      <label for="evidence-text">Evidence from my copy (quote or paraphrase)</label><textarea id="evidence-text" placeholder="The moment I found…"></textarea>
+      <label for="location">Page/chapter and speaker or narrator</label><input id="location" type="text" placeholder="Page/chapter, speaker/narrator">
+      <label for="reasoning">My reasoning: how does this evidence support the claim?</label><textarea id="reasoning" placeholder="This detail supports my claim because…"></textarea>
+      <label for="limit">What this evidence does not prove / another possible perspective</label><textarea id="limit" placeholder="This does not necessarily mean… Another perspective might be…"></textarea>
+      <div class="controls"><button onclick="copyEvidence()">Copy evidence card</button><button class="secondary" onclick="speakText(document.getElementById('reasoning').value || 'Add your reasoning about the evidence.')">▶ Listen to reasoning</button></div>
+      <div class="feedback" id="evidence-feedback" aria-live="polite">Your evidence card will be assembled for copying when you click the button.</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:1rem">
+    <h3>Connect the novel to another source</h3>
+    <p>For the final feature, add at least one informational, first-person, literary, visual, or film source. Ask: What background knowledge does this source add? Whose voice is centered? How is its perspective similar to or different from <em>Wonder</em>?</p>
+    <label for="source-note">Source title/type and what it adds</label><textarea id="source-note" placeholder="My additional source is… It adds background knowledge about… Its perspective differs because…"></textarea>
+  </div>
+</section>
+
+<section id="build">
+  <div class="kicker">06 · Plan your feature</div><h2>Build your “See It From My Perspective” feature</h2>
+  <p>Your final feature should help a real reader understand how identity, assumptions, and perspective shape belonging. Use technology to make the analysis clearer and more accessible—not just to decorate the page.</p>
+  <div class="grid two">
+    <div class="card">
+      <h3>Feature blueprint</h3>
+      <div class="checklist" id="feature-checklist">
+        <label><input type="checkbox" class="feature-check"> A clear, arguable claim about identity, assumptions, perspective, or belonging.</label>
+        <label><input type="checkbox" class="feature-check"> Relevant evidence from <em>Wonder</em>, with page/chapter and explanation.</label>
+        <label><input type="checkbox" class="feature-check"> Evidence or information from at least one additional source.</label>
+        <label><input type="checkbox" class="feature-check"> Consideration of another character’s or source’s perspective.</label>
+        <label><input type="checkbox" class="feature-check"> A purposeful visual, audio, or interactive element that adds meaning.</label>
+        <label><input type="checkbox" class="feature-check"> Revision for clarity, accuracy, audience, and respectful representation.</label>
+        <label><input type="checkbox" class="feature-check"> A reflection on what I kept, revised, or rejected from AI—and why.</label>
+      </div>
+      <div class="progress" aria-label="Feature checklist completion"><span id="progressbar"></span></div>
+      <p class="note" id="progress-text">0 of 7 criteria checked</p>
+    </div>
+    <div class="card plum">
+      <h3>Make the modes work together</h3>
+      <div class="step"><span class="stepno">👁</span><div><strong>Visual</strong><br>Use an image, diagram, layout, or highlighted evidence to focus attention on a meaningful contrast.</div></div>
+      <div class="step"><span class="stepno">👂</span><div><strong>Audio</strong><br>Use a brief narration or accessible audio version to emphasize tone or help readers access the idea.</div></div>
+      <div class="step"><span class="stepno">✍</span><div><strong>Written language</strong><br>Use a claim, evidence, and reasoning to explain the interpretation precisely.</div></div>
+      <div class="step"><span class="stepno">↔</span><div><strong>Interaction</strong><br>Let readers compare perspectives or reveal a source note that deepens the interpretation.</div></div>
+      <p><strong>Design test:</strong> If removing a mode changes nothing about the reader’s understanding, reconsider its purpose.</p>
+    </div>
+  </div>
+  <div class="card soft" style="margin-top:1rem">
+    <h3>Draft your audience-facing claim</h3>
+    <label for="final-claim">Claim</label><textarea id="final-claim" placeholder="In Wonder, Palacio suggests that…"></textarea>
+    <label for="audience">Who is your intended audience?</label><input id="audience" type="text" placeholder="Classmates, school community, readers of a digital magazine…">
+    <label for="mode-plan">How will the visual, audio, and interaction strengthen the argument?</label><textarea id="mode-plan" placeholder="The visual will… The audio will… The interaction will…"></textarea>
+    <button onclick="copyFinalPlan()">Copy my feature plan</button>
+    <div class="feedback" id="final-feedback" aria-live="polite">Draft your plan, then copy it into your working document.</div>
+  </div>
+</section>
+
+
+
+<section id="final-project">
+  <div class="kicker">07 · Create, connect, and share</div>
+  <h2>Final activity: Beyond First Impressions — My Multimodal Message</h2>
+  <p>Now bring your learning together. Create a short message about a theme in <em>Wonder</em>—such as identity, belonging, empathy, appearance, or assumptions. Combine your own writing with a visual and/or audio recording. Use evidence from the novel and connect it to a real-life first-person story you explored.</p>
+  <div class="grid two">
+    <div class="card soft">
+      <h3>Your mission</h3>
+      <div class="step"><span class="stepno">1</span><div><strong>Choose a theme</strong><br>Pick one idea you want your audience to understand.</div></div>
+      <div class="step"><span class="stepno">2</span><div><strong>Connect two sources</strong><br>Use a specific moment from <em>Wonder</em> and a detail or idea from a real-life first-person account. Record the chapter/page and the nonfiction source title.</div></div>
+      <div class="step"><span class="stepno">3</span><div><strong>Create your message</strong><br>Write a short explanation, then add a meaningful image, drawing, or audio narration. Each mode should help communicate your idea.</div></div>
+      <div class="step"><span class="stepno">4</span><div><strong>Reflect and share</strong><br>Explain what you learned from the two sources and prepare your work for classmates or another teacher-approved audience.</div></div>
+    </div>
+    <div class="card teal">
+      <h3>Success checklist</h3>
+      <div class="checklist" id="final-checklist">
+        <label><input type="checkbox" class="final-check"> I state a clear idea about a theme.</label>
+        <label><input type="checkbox" class="final-check"> I include accurate evidence from <em>Wonder</em>.</label>
+        <label><input type="checkbox" class="final-check"> I connect to a real-life first-person story and identify the source.</label>
+        <label><input type="checkbox" class="final-check"> My writing explains what the evidence means.</label>
+        <label><input type="checkbox" class="final-check"> My image or audio adds meaning instead of just decoration.</label>
+        <label><input type="checkbox" class="final-check"> I explain what I learned or how my thinking changed.</label>
+        <label><input type="checkbox" class="final-check"> I use respectful language and credit the sources I used.</label>
+      </div>
+      <div class="progress"><span id="final-progressbar"></span></div>
+      <p class="note" id="final-progress-text">0 of 7 criteria checked</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:1rem">
+    <h3>Create your multimodal message</h3>
+    <label for="project-theme">My theme</label>
+    <select id="project-theme"><option value="">Choose a theme</option><option>Identity</option><option>Belonging</option><option>Empathy</option><option>Appearance and assumptions</option><option>Perspective</option><option>Another theme</option></select>
+    <label for="project-title">Title for my message</label><input type="text" id="project-title" placeholder="A short, thoughtful title">
+    <label for="project-writing">My written explanation (about 4–6 sentences)</label>
+    <textarea id="project-writing" style="min-height:150px" placeholder="In Wonder, one important idea is… One moment that shows this is… In the real-life story… These sources connect because… I want my audience to understand…"></textarea>
+    <label for="project-book-evidence">Novel evidence and page/chapter</label>
+    <textarea id="project-book-evidence" placeholder="Describe or briefly quote a specific moment from your own copy of Wonder and note the page/chapter."></textarea>
+    <label for="project-real-story">Real-life story: source title and connection</label>
+    <textarea id="project-real-story" placeholder="The first-person account I explored is… It helped me understand…"></textarea>
+    <label for="project-image">Add an image or drawing (optional)</label>
+    <input type="file" id="project-image" accept="image/*" aria-describedby="image-help">
+    <p class="note" id="image-help">Choose an image file from your device. Use your own drawing or an image you have permission to use, and add a credit when needed.</p>
+    <div id="project-image-preview" class="feedback" aria-live="polite">Your selected image preview will appear here.</div>
+    <label for="project-image-caption">Image caption / why this visual matters</label>
+    <textarea id="project-image-caption" placeholder="This visual supports my message because…"></textarea>
+    <div class="card soft" style="margin-top:1rem">
+      <h3>Optional: record your own audio explanation</h3>
+      <p class="note">If your browser and device allow microphone access, record a short narration of your main idea. You can also record audio using a school-approved tool and submit it with your project.</p>
+      <div class="controls"><button type="button" id="record-audio" class="tealbtn" onclick="toggleRecording()">● Start recording</button><button type="button" class="secondary" onclick="stopRecording()">■ Stop recording</button></div>
+      <p id="record-status" class="feedback" aria-live="polite">No recording yet. Microphone permission may be required.</p>
+      <audio id="project-audio-playback" controls style="display:none;width:100%"></audio>
+    </div>
+    <label for="project-reflection">What did I learn from both sources? How did my thinking change?</label>
+    <textarea id="project-reflection" placeholder="Before exploring these sources, I thought… Now I understand…"></textarea>
+    <div class="controls"><button onclick="copyProject()">Copy my project draft</button><button class="secondary" onclick="speakText(document.getElementById('project-writing').value || 'Write your multimodal message.')">▶ Listen to my writing</button></div>
+    <div class="feedback" id="project-feedback" aria-live="polite">Your draft can be copied into your school-approved document or presentation. Save your image and audio separately if you plan to submit them.</div>
+  </div>
+  <div class="card plum" style="margin-top:1rem">
+    <h3>Why create this?</h3>
+    <p>You are not just answering questions about a text—you are combining literary evidence, a real person’s perspective, and your own interpretation into a new message for an audience. Thoughtful use of writing, visuals, and audio can make your meaning clearer and give readers more than one way to engage with your ideas.</p>
+    <p class="note">Teaching connections: Vocabulary and background knowledge support the Science of Reading. The original, multimodal product can strengthen a SAMR Redefinition connection when students synthesize sources and share an accessible message with an authentic audience—not simply transfer a worksheet onto a screen.</p>
+  </div>
+</section>
+</main>
+<footer><div class="inner"><p><strong>Beyond First Impressions</strong> · Artifact 3 for “Identity, Belonging, and Perspective: Seeing Beyond Assumptions.”</p><p class="note" style="color:#d9d5df">Learning note: This is a teacher-created AI-generated learning artifact. The AI sample is not a quotation from <em>Wonder</em>. Students should verify all literary claims using their own copy and cite additional sources in their final work.</p><button onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button></div></footer>
 <script>
-const tabs=[...document.querySelectorAll('.nav button')];tabs.forEach(b=>b.addEventListener('click',()=>{tabs.forEach(x=>x.setAttribute('aria-selected','false'));b.setAttribute('aria-selected','true');document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===b.dataset.target));document.getElementById('top').scrollIntoView({behavior:'smooth',block:'start'});}));
-const think={think1:'Ask yourself: What can appearance tell us—and what can it never prove about a person’s character?',think2:'Pause before deciding. What does the text directly show? What information is missing? Which assumption needs checking?',think3:'A changed interpretation is a strength when it follows evidence. Identify the scene or detail that caused the change.'};document.querySelectorAll('[data-think]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-think]').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById('thinkBox').textContent=think[b.dataset.think]}));
-document.querySelectorAll('[data-pers]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-pers]').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.perspective').forEach(x=>x.classList.toggle('active',x.id==='pers-'+b.dataset.pers))}));
-const decisions={keep:'Partly useful, but not strong enough as written. “Everyone” is too broad, and the sentence reduces Auggie to difference. If you keep the idea, support it with a specific scene and add complexity.',revise:'Best choice for this draft. Keep the relevant idea that assumptions affect belonging, but revise the broad claim. Add details about relationships, personality, and changing perspectives, then verify each point in the novel.',reject:'You could reject this wording because it oversimplifies the character and makes an unsupported claim about everyone. Explain what is inaccurate or missing, then replace it with a text-supported interpretation.'};document.querySelectorAll('[data-decision]').forEach(b=>b.addEventListener('click',()=>document.getElementById('decisionFeedback').textContent=decisions[b.dataset.decision]));
-document.querySelectorAll('[data-note]').forEach(b=>b.addEventListener('click',()=>{const n=document.getElementById(b.dataset.note);n.classList.toggle('show');b.textContent=n.classList.contains('show')?'Hide prompt':'Reveal evidence prompt'}));const q={a:'Not quite. “Everyone” is a sweeping generalization and the statement gives no specific evidence.',b:'Correct. This option connects a specific scene to a claim and explains the reasoning. Add the actual scene and page number from your copy of the novel.',c:'Not quite. AI output is a suggestion to evaluate, not proof. Check interpretations against the primary text.'};document.querySelectorAll('[data-quiz]').forEach(b=>b.addEventListener('click',()=>document.getElementById('quizFeedback').textContent=q[b.dataset.quiz]));
-const checks=[...document.querySelectorAll('#taskList input')];function updateProgress(){let n=checks.filter(c=>c.checked).length;document.getElementById('progressBar').style.width=(n/checks.length*100)+'%';document.getElementById('progressText').textContent=n+' of '+checks.length+' steps complete.'}checks.forEach(c=>c.addEventListener('change',updateProgress));
-function speak(text){if(!('speechSynthesis'in window)){document.getElementById('audioStatus').textContent='Text-to-speech is not supported in this browser. You can still read the text on screen.';return}window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.rate=.92;u.onstart=()=>document.getElementById('audioStatus').textContent='Playing audio…';u.onend=()=>document.getElementById('audioStatus').textContent='Audio finished.';window.speechSynthesis.speak(u)}const intro='Beyond First Impressions. What happens when we decide who someone is before we really know them? In Wonder, Auggie Pullman’s facial difference influences how some people react to him. But appearance does not tell the whole story of a person’s humor, interests, worries, courage, or relationships. Explore different perspectives, evaluate an AI-generated interpretation, and support your own claim with evidence from the novel.';document.getElementById('readIntro').addEventListener('click',()=>speak(intro));document.getElementById('readTop').addEventListener('click',()=>speak(intro));document.getElementById('stopAudio').addEventListener('click',()=>{if('speechSynthesis'in window)window.speechSynthesis.cancel();document.getElementById('audioStatus').textContent='Audio stopped.'});document.getElementById('speakClaim').addEventListener('click',()=>{let t=document.getElementById('claimBox').value.trim();speak(t||'Type your claim in the box first, then select listen to my claim.')});document.getElementById('clearClaim').addEventListener('click',()=>{document.getElementById('claimBox').value=''});document.getElementById('speakSourceNote').addEventListener('click',()=>{const t=document.getElementById('sourceNote').value.trim();speak(t||'Write a note about a nonfiction source first, then select listen to my source note.')});document.getElementById('clearSourceNote').addEventListener('click',()=>{document.getElementById('sourceNote').value=''});
-</script></body></html>
+const lenses={
+ student:{label:"Student’s lens",title:"What might this person notice?",text:"A student may notice who includes someone, who avoids eye contact, or how classmates respond. But a single moment cannot prove what everyone thinks or why they acted that way.",check:"Which action, dialogue, or reaction in Wonder supports your interpretation? What else could explain the moment?"},
+ family:{label:"Family lens",title:"What might care make visible?",text:"A family member may notice a person’s needs, strengths, worries, routines, and growth over time. That close knowledge can add context, but family members also have limited viewpoints and may not see every school or peer interaction.",check:"Which details in the novel support this lens? What might this person know that a classmate does not—and what might they not know?"},
+ observer:{label:"Outside observer’s lens",title:"What can an observer actually know?",text:"An observer may notice visible behavior and the setting, but cannot automatically know a person’s feelings, motives, history, or identity from appearance alone. Observation is a starting point, not a complete explanation.",check:"Separate what the text shows from what you infer. Which part is evidence, and which part is an assumption?"}
+};
+function setLens(key){const d=lenses[key];document.querySelectorAll('.perspective').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lens===key?'true':'false'));document.getElementById('perspective-output').innerHTML='<span class="tag">'+d.label+'</span><h3>'+d.title+'</h3><p>'+d.text+'</p><p><strong>Check the text:</strong> '+d.check+'</p>'; }
+function speakText(t){if(!t||!t.trim())return;if(!('speechSynthesis'in window)){alert('Audio playback is not supported in this browser.');return}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.rate=.92;speechSynthesis.speak(u)}
+function speakSection(id){let el=document.getElementById(id)||document.querySelector('header');speakText(el.innerText)}
+function stopSpeech(){if('speechSynthesis'in window)speechSynthesis.cancel()}
+function checkAI(){let v=document.querySelector('input[name="ai-choice"]:checked');let out=document.getElementById('ai-feedback');if(!v){out.textContent='Choose Keep, Revise, or Reject first.';return}if(v.value==='keep'){out.textContent='Look again: this statement generalizes about people and assumes inclusion alone solves belonging. A strong reader asks for evidence and nuance.'}else if(v.value==='revise'){out.textContent='Strong choice if your revision removes the generalization, recognizes that experiences differ, and grounds the interpretation in specific evidence from the novel.'}else{out.textContent='A defensible choice: the statement is too broad to accept as written. You could reject it or revise it—but explain your decision with evidence from the novel.'}}
+function checkIssues(){let vals=[...document.querySelectorAll('.ai-issue:checked')].map(x=>x.value);let out=document.getElementById('issue-feedback');let good=['general','simple','evidence'];let wrong=vals.includes('complete');if(!vals.length){out.textContent='Select at least one observation first.';return}let n=vals.filter(v=>good.includes(v)).length;out.textContent=(wrong?'The “represents every character completely” option is not a problem in the sample; the sample does not do this. ':'')+n+' of the key problems identified. Look for overgeneralizing, oversimplifying belonging, and missing evidence.'}
+function copyText(id){let t=document.getElementById(id).value;if(!t.trim()){alert('Write something first, then copy it.');return}navigator.clipboard?.writeText(t).then(()=>alert('Copied. Paste it into your working document.')).catch(()=>{document.getElementById(id).select();alert('Text selected. Press Ctrl+C to copy it.')})}
+function copyEvidence(){let fields=[['Claim', 'claim'],['Evidence', 'evidence-text'],['Location / speaker', 'location'],['Reasoning','reasoning'],['Limit / another perspective','limit']];let s=fields.map(([label,id])=>label+': '+document.getElementById(id).value.trim()).join('\n\n');if(!document.getElementById('claim').value.trim()||!document.getElementById('evidence-text').value.trim()){document.getElementById('evidence-feedback').textContent='Add at least a working claim and evidence before copying.';return}copyString(s,'evidence-feedback')}
+function copyFinalPlan(){let s='Claim: '+document.getElementById('final-claim').value+'\nAudience: '+document.getElementById('audience').value+'\nMultimodal plan: '+document.getElementById('mode-plan').value;if(!document.getElementById('final-claim').value.trim()){document.getElementById('final-feedback').textContent='Write your claim first.';return}copyString(s,'final-feedback')}
+function copyString(s,target){let el=document.getElementById(target);if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(()=>el.textContent='Copied! Paste this into your working document.').catch(()=>{window.prompt('Copy your text below:',s)})}else{window.prompt('Copy your text below:',s)}}
+function updateProgress(){let checks=[...document.querySelectorAll('.feature-check')];let n=checks.filter(c=>c.checked).length;document.getElementById('progressbar').style.width=(n/checks.length*100)+'%';document.getElementById('progress-text').textContent=n+' of '+checks.length+' criteria checked'}
+document.querySelectorAll('.feature-check').forEach(c=>c.addEventListener('change',updateProgress));
+
+function checkVocab(){
+  const answers=[['vocab-q1','Identity'],['vocab-q2','Assumption'],['vocab-q3','Empathy']];
+  let correct=0, unanswered=0;
+  answers.forEach(([id,answer])=>{const el=document.getElementById(id);if(!el.value)unanswered++;else if(el.value===answer)correct++;});
+  const out=document.getElementById('vocab-feedback');
+  if(unanswered){out.textContent='Answer all three questions first. You have '+unanswered+' question(s) left.';return;}
+  out.textContent=correct+' of 3 correct. '+(correct===3?'Great work—you are ready to use these words as you read.':'Review the definitions above and try again. Answers: 1) Identity, 2) Assumption, 3) Empathy.');
+}
+document.querySelectorAll('.final-check').forEach(c=>c.addEventListener('change',updateFinalProgress));
+function updateFinalProgress(){
+  const checks=[...document.querySelectorAll('.final-check')], n=checks.filter(c=>c.checked).length;
+  document.getElementById('final-progressbar').style.width=(n/checks.length*100)+'%';
+  document.getElementById('final-progress-text').textContent=n+' of '+checks.length+' criteria checked';
+}
+function copyProject(){
+  const fields=[['Theme','project-theme'],['Title','project-title'],['Written explanation','project-writing'],['Wonder evidence and location','project-book-evidence'],['Real-life story connection','project-real-story'],['Image caption','project-image-caption'],['Reflection','project-reflection']];
+  const content=fields.map(([label,id])=>label+': '+document.getElementById(id).value.trim()).join('\n\n');
+  if(!document.getElementById('project-writing').value.trim()){document.getElementById('project-feedback').textContent='Write your explanation first, then copy your draft.';return;}
+  copyString(content,'project-feedback');
+}
+const imageInput=document.getElementById('project-image');
+if(imageInput){imageInput.addEventListener('change',function(){
+  const preview=document.getElementById('project-image-preview'); preview.innerHTML='';
+  const file=this.files&&this.files[0];
+  if(!file){preview.textContent='Your selected image preview will appear here.';return;}
+  if(!file.type.startsWith('image/')){preview.textContent='Please choose an image file.';return;}
+  const img=document.createElement('img');img.alt='Preview of your selected project image';img.style.maxWidth='100%';img.style.maxHeight='320px';img.style.borderRadius='12px';img.style.marginTop='.5rem';
+  img.src=URL.createObjectURL(file);preview.appendChild(document.createTextNode(file.name));preview.appendChild(document.createElement('br'));preview.appendChild(img);
+});}
+let projectRecorder=null, projectChunks=[];
+async function toggleRecording(){
+  if(projectRecorder && projectRecorder.state==='recording'){stopRecording();return;}
+  const status=document.getElementById('record-status');
+  if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder){status.textContent='Audio recording is not supported in this browser. Use a school-approved recording tool instead.';return;}
+  try{
+    const stream=await navigator.mediaDevices.getUserMedia({audio:true});
+    projectChunks=[];projectRecorder=new MediaRecorder(stream);
+    projectRecorder.ondataavailable=e=>{if(e.data&&e.data.size)projectChunks.push(e.data);};
+    projectRecorder.onstop=()=>{
+      const blob=new Blob(projectChunks,{type:projectRecorder.mimeType||'audio/webm'});
+      const player=document.getElementById('project-audio-playback');player.src=URL.createObjectURL(blob);player.style.display='block';
+      status.textContent='Recording ready. Listen below; use your browser’s audio controls to review it. Save or submit the recording using your teacher-approved method.';
+      stream.getTracks().forEach(track=>track.stop());
+    };
+    projectRecorder.start();status.textContent='Recording… Speak clearly about your theme and what you learned from both sources.';
+    document.getElementById('record-audio').textContent='● Recording…';
+  }catch(e){status.textContent='Microphone access was not available. Check browser permissions or use a school-approved recording tool.';}
+}
+function stopRecording(){
+  if(projectRecorder && projectRecorder.state==='recording'){projectRecorder.stop();document.getElementById('record-audio').textContent='● Record again';}
+  else {const status=document.getElementById('record-status');if(!status.textContent.includes('ready'))status.textContent='No recording is currently in progress.';}
+}
+
+</script>
+
+<script>globalThis.__codexVisualizationInitialGlobals={"statePersistence":"none","stateModelContext":"none","visualizationStyleVariables":{"--accent":"rgb(19, 52, 99)","--accent-foreground":"rgb(44, 103, 197)","--background":"rgb(0, 0, 0)","--border":"rgba(255, 255, 255, 0.15)","--border-strong":"rgba(255, 255, 255, 0.2)","--card":"color-mix(in oklab, rgb(237, 237, 237) 5%, transparent)","--card-foreground":"rgb(237, 237, 237)","--corner-shape":"round","--control-spacing":"12px","--cursor-interaction":"pointer","--destructive":"rgb(255, 133, 73)","--font-mono":"ui-monospace, SFMono-Regular, \"SF Mono\", menlo, consolas, \"Liberation Mono\", monospace","--font-sans":"-apple-system-body, ui-sans-serif, -apple-system, system-ui, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"","--font-size-base":"16px","--font-weight-normal":"400","--foreground":"rgb(237, 237, 237)","--input":"rgba(255, 255, 255, 0.2)","--muted":"color-mix(in srgb, rgb(237, 237, 237) 10%, transparent)","--muted-foreground":"rgb(175, 175, 175)","--popover":"rgb(48, 48, 48)","--popover-foreground":"rgb(237, 237, 237)","--primary":"rgb(44, 103, 197)","--primary-foreground":"rgb(13, 13, 13)","--radius":"8px","--radius-2xl":"16px","--radius-lg":"8px","--radius-md":"6px","--radius-sm":"4px","--ring":"rgb(58, 131, 247)","--secondary":"rgb(48, 48, 48)","--secondary-foreground":"rgb(237, 237, 237)","--blue":"rgb(58, 131, 247)","--orange":"rgb(251, 106, 34)","--green":"rgb(64, 201, 119)","--red":"rgb(255, 103, 100)","--purple":"rgb(173, 123, 249)","--yellow":"rgb(255, 210, 64)","--visualize-paint-gutter":"0px","--viz-series-1":"rgb(44, 103, 197)","--viz-series-2":"#f6d459","--viz-series-3":"#f28ec0","--viz-series-4":"#54ccc2","--viz-series-5":"#71d689","--viz-series-6":"#f79951"},"visualizationTheme":"dark"};</script>
+<style id="codex-visualization-host-theme">:root {}</style>
+<script>
+(() => {
+  // Host colors are defaults; later authored styles can give the same names
+  // their own meaning (for example, --muted as a chart's label color).
+  const hostStyles = document.getElementById("codex-visualization-host-theme");
+  const hostStyle = hostStyles.sheet.cssRules[0].style;
+  // Typography, geometry and interaction cursors still follow the host.
+  const styleForProperty = (property) =>
+    /^--(?:font-|radius|corner-shape$|control-spacing$|cursor-interaction$|icon-size$|visualize-paint-gutter$)/.test(property)
+      ? document.documentElement.style
+      : hostStyle;
+  const initialGlobals =
+    globalThis.__codexVisualizationInitialGlobals ?? globalThis.openai;
+  delete globalThis.__codexVisualizationInitialGlobals;
+  if (initialGlobals?.statePersistence != null) {
+    globalThis.openai ??= {};
+    globalThis.openai.statePersistence = initialGlobals.statePersistence;
+    globalThis.openai.stateModelContext = initialGlobals.stateModelContext ?? "none";
+  }
+  if (!false) {
+    return;
+  }
+  let appliedProperties = [];
+  const applyHostStyleVariables = (styleVariables) => {
+    if (styleVariables == null || typeof styleVariables !== "object") {
+      return;
+    }
+    for (const property of appliedProperties) {
+      styleForProperty(property).removeProperty(property);
+    }
+    appliedProperties = [];
+    for (const [property, value] of Object.entries(styleVariables)) {
+      if (property.startsWith("--") && typeof value === "string") {
+        styleForProperty(property).setProperty(property, value);
+        appliedProperties.push(property);
+      }
+    }
+  };
+
+  const syncHostStyles = (globals) => {
+    applyHostStyleVariables(globals?.visualizationStyleVariables);
+    const sandboxDocument = globalThis.frameElement?.ownerDocument;
+    if (sandboxDocument != null && globals?.visualizationTheme != null) {
+      let colorSchemeMeta = sandboxDocument.querySelector(
+        'meta[name="color-scheme"]',
+      );
+      if (colorSchemeMeta == null) {
+        colorSchemeMeta = sandboxDocument.createElement("meta");
+        colorSchemeMeta.name = "color-scheme";
+        sandboxDocument.head.appendChild(colorSchemeMeta);
+      }
+      colorSchemeMeta.content = globals.visualizationTheme;
+      sandboxDocument.documentElement.style.colorScheme =
+        globals.visualizationTheme;
+      // Paint the host surface behind transparent saved visualization documents.
+      sandboxDocument.documentElement.style.backgroundColor =
+        hostStyle.getPropertyValue("--background");
+    }
+  };
+
+  syncHostStyles(initialGlobals);
+  globalThis.addEventListener("openai:set_globals", (event) => {
+    syncHostStyles(event.detail?.globals);
+  });
+})();
+</script>
+<script>
+(() => {
+  const reportEnvironmentError = (value) => {
+    const error = value instanceof Error ? value : new Error(String(value));
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_error__",
+        {
+          message: error.message,
+          name: error.name,
+          stack: error.stack,
+        },
+      )
+      .catch(() => {});
+  };
+
+  globalThis.addEventListener("error", (event) => {
+    if (event.target?.localName === "script") {
+      // A script's own onerror may render a fallback or load an alternative.
+      // Let that handler run; failures it throws still reach the global error path.
+      const handlesError = typeof event.target.onerror === "function";
+      globalThis.queueMicrotask(() => {
+        if (!handlesError && !event.defaultPrevented) {
+          reportEnvironmentError("Visualization script could not be loaded");
+        }
+      });
+    } else if (event.target === globalThis) {
+      reportEnvironmentError(event.error ?? event.message);
+    }
+  }, true);
+  globalThis.addEventListener("unhandledrejection", (event) => {
+    reportEnvironmentError(event.reason);
+  });
+})();
+</script>
+<script id="codex-visualization-variants">
+(() => {
+  let previousSnapshot = "[]";
+  let roots = [];
+  const report = () => {
+    roots = Array.from(
+      document.querySelectorAll(".viz-carousel[data-active-variant]"),
+    ).slice(0, 32);
+    const selectedVariants = roots.flatMap((root, carousel) => {
+      const variant = root.dataset.activeVariant;
+      const label = root.getAttribute("aria-label")?.slice(0, 256);
+      return variant ? [{
+        carousel,
+        ...(label == null ? {} : { label }),
+        variant: variant.slice(0, 256),
+      }] : [];
+    });
+    const snapshot = JSON.stringify(selectedVariants);
+    if (snapshot !== previousSnapshot) {
+      previousSnapshot = snapshot;
+      void globalThis.openai.callTool("__codex_visualization_annotations__", {
+        type: "variants",
+        selectedVariants,
+      }).catch(() => {});
+    }
+  };
+  const observer = new MutationObserver((records) => {
+    if (records.some((record) => record.type === "attributes") || roots.some((root) => !root.isConnected)) {
+      report();
+    }
+  });
+  observer.observe(document, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["data-active-variant"],
+  });
+  report();
+  globalThis.addEventListener("pagehide", () => observer.disconnect(), { once: true });
+})();
+</script>
+<script>
+(() => {
+  let isHovering = false;
+  let isTouch = false;
+  const reportHover = (nextIsHovering, nextIsTouch = false) => {
+    if (nextIsHovering === isHovering && nextIsTouch === isTouch) {
+      return;
+    }
+    isHovering = nextIsHovering;
+    isTouch = nextIsTouch;
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_hover__",
+        isTouch ? { isHovering, pointerType: "touch" } : { isHovering },
+      )
+      .catch(() => {});
+  };
+
+  globalThis.addEventListener(
+    "pointerover",
+    (event) =>
+      reportHover(event.pointerType !== "touch", event.pointerType === "touch"),
+    { capture: true },
+  );
+  globalThis.addEventListener(
+    "pointerout",
+    (event) => {
+      if (event.pointerType !== "touch" && event.relatedTarget == null) {
+        reportHover(false);
+      }
+    },
+    { capture: true },
+  );
+})();
+</script>
+<script>
+(() => {
+  const report = (method) => {
+    void globalThis.openai.callTool("__codex_inline_visualization_input__", { method }).catch(() => {});
+  };
+  globalThis.addEventListener("pointerdown", () => report("pointer"), { capture: true });
+  globalThis.addEventListener("keydown", (event) => {
+    if (!event.isComposing && event.key !== "Shift" && !event.altKey && !event.ctrlKey && !event.metaKey) {
+      report(["Tab","ArrowLeft","ArrowRight","ArrowUp","ArrowDown"].includes(event.key) ? "keyboard-navigation" : "keyboard");
+    }
+  }, { capture: true });
+})();
+</script>
+<script>
+(() => {
+  const bubbledClicks = new WeakSet();
+  const interactiveSelector = [
+    "button", "input", "select", "textarea", "label", "summary", "a[href]",
+    "audio[controls]", "video[controls]", "[onclick]", "[data-visualization-interactive]",
+    '[contenteditable]:not([contenteditable="false"])',
+    ...[
+      "button", "checkbox", "combobox", "gridcell", "link", "listbox",
+      "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio",
+      "scrollbar", "searchbox", "slider", "spinbutton", "switch", "tab",
+      "textbox", "treeitem",
+    ].map((role) => '[role~="' + role + '"]'),
+  ].join(",");
+
+  globalThis.addEventListener("click", (event) => bubbledClicks.add(event));
+  globalThis.addEventListener("click", (event) => {
+    // Capture the path before a control can remove itself. Custom delegated
+    // controls can opt in with data-visualization-interactive.
+    const elements = event.composedPath().filter((target) => target instanceof Element);
+    const isInteractiveTarget = elements.some((element) =>
+      element.matches(interactiveSelector) ||
+      (element.hasAttribute("tabindex") && element.tabIndex >= 0)) ||
+      (elements[0] != null && getComputedStyle(elements[0]).cursor === "pointer");
+    // Use a task, not a microtask: native dispatch can run microtasks between
+    // listeners. Propagation flags are reset when dispatch finishes:
+    // https://dom.spec.whatwg.org/#concept-event-dispatch
+    globalThis.setTimeout(() => {
+      void globalThis.openai.callTool("__codex_inline_visualization_click__", {
+        isInteractive: isInteractiveTarget || event.defaultPrevented ||
+          (event.bubbles && !bubbledClicks.has(event)),
+      }).catch(() => {});
+    }, 0);
+  }, { capture: true });
+})();
+</script>
+<script>
+(() => {
+  globalThis.addEventListener("keydown", (event) => {
+    if (event.isComposing || event.altKey || event.ctrlKey || event.metaKey ||
+      event.shiftKey || !["ArrowLeft", "ArrowRight", "Escape"].includes(event.key)) {
+      return;
+    }
+    const target = event.composedPath().find((element) => element instanceof HTMLElement);
+    const editable = target?.closest("[contenteditable]");
+    const editing = target && (target.isContentEditable ||
+      (editable && editable.getAttribute("contenteditable") !== "false") ||
+      target.closest('input, textarea, select, [role="slider"], [role="spinbutton"], [role="combobox"], [role="listbox"], [role="grid"], [role="tree"], [role="tablist"], [role="menu"]'));
+    if (event.key !== "Escape" && editing) { return; }
+    // Let the widget handle the key before forwarding it across the sandbox.
+    globalThis.setTimeout(() => {
+      if (!event.defaultPrevented && globalThis.openai?.displayMode === "fullscreen") {
+        void globalThis.openai.callTool("__codex_inline_visualization_preview_key__", {
+          key: event.key,
+        }).catch(() => {});
+      }
+    }, 0);
+  });
+})();
+</script>
+
+
+
+
+<script>
+(() => {
+  const contentRange = document.createRange();
+  let previousMeasurement = null;
+  let heightReportTimer = null;
+  const reportHeight = () => {
+    const bodyChildren = Array.from(document.body.children).filter(
+      (element) =>
+        element.tagName !== "SCRIPT" &&
+        element.tagName !== "STYLE" &&
+        element.getAttribute("role") !== "tooltip",
+    );
+    const bodyStyle = globalThis.getComputedStyle(document.body);
+    const contentWidth = Math.max(
+      0,
+      Math.round(
+        globalThis.innerWidth -
+          parseFloat(bodyStyle.paddingLeft) -
+          parseFloat(bodyStyle.paddingRight),
+      ),
+    );
+    let contentHeight;
+    if (bodyChildren.length === 0) {
+      contentRange.selectNodeContents(document.body);
+      contentHeight = contentRange.getBoundingClientRect().height;
+    } else if (bodyChildren.length === 1) {
+      const [bodyChild] = bodyChildren;
+      const childRect = bodyChild.getBoundingClientRect();
+      // Child margins can collapse above the root without adding to its height.
+      // The host adds body padding separately.
+      contentHeight =
+        Math.max(bodyChild.scrollHeight, childRect.height) +
+        Math.max(
+          0,
+          childRect.top -
+            document.body.getBoundingClientRect().top -
+            parseFloat(bodyStyle.paddingTop),
+        );
+    } else {
+      const bodyTop = document.body.getBoundingClientRect().top;
+      contentHeight = Math.max(
+        ...bodyChildren.map(
+          (bodyChild) => bodyChild.getBoundingClientRect().bottom - bodyTop,
+        ),
+      );
+    }
+    const viewportHeight = globalThis.innerHeight;
+    const previous = previousMeasurement;
+    previousMeasurement = { contentHeight, contentWidth, viewportHeight };
+    if (
+      previous != null &&
+      contentWidth === previous.contentWidth &&
+      contentHeight - previous.contentHeight ===
+        viewportHeight - previous.viewportHeight
+    ) {
+      return;
+    }
+
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_height__",
+        { height: contentHeight, width: contentWidth },
+      )
+      .catch(() => {});
+  };
+  const scheduleHeightReport = () => {
+    if (heightReportTimer != null) {
+      return;
+    }
+    // Offscreen frames can suspend animation callbacks while their content loads.
+    heightReportTimer = globalThis.setTimeout(() => {
+      heightReportTimer = null;
+      reportHeight();
+    }, 0);
+  };
+
+  const resizeObserver = new ResizeObserver(scheduleHeightReport);
+  const observeBodyChildren = () => {
+    for (const element of document.body.children) {
+      resizeObserver.observe(element);
+    }
+  };
+  resizeObserver.observe(document.body);
+  observeBodyChildren();
+  new MutationObserver(() => {
+    observeBodyChildren();
+    scheduleHeightReport();
+  }).observe(document.body, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["style", "class", "height", "width"],
+  });
+  globalThis.addEventListener("resize", scheduleHeightReport);
+  reportHeight();
+})();
+</script>
+<style id="codex-visualization-document-scrollbar">html,body{scrollbar-width:none!important}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none!important}</style>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
